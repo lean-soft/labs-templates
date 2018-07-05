@@ -47,7 +47,7 @@
 				"value": "http://#{applicationName}##{Build.BuildId}#Prod.azurewebsites.net",
 				"type": "url"
 			}, {
-				"key": "Build Badge ",
+				"key": "Build Badge",
 				"value": "#{BuildBadge}#",
 				"type": "url"
 			}, {
