@@ -36,6 +36,9 @@
 			"value": "",
 			"allowOverride": true
 		},
+		"envInstanceName": {
+			"value": ""
+		},
 		"groupId": {
 			"value": "0000"
 		},
@@ -76,84 +79,108 @@
 		"scope": "refs/heads/master",
 		"intValue": 0
 	}, {
-		"name": "CanceledBuilds",
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/dev",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/dev",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
 		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/dev",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/dev",
+		"intValue": 1
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-06-07T00:00:00.000Z"
+		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 14,
-		"date": "2018-06-07T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 2,
+		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
+		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-06-07T00:00:00.000Z"
+		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 12,
-		"date": "2018-06-07T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 4,
+		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 26,
-		"date": "2018-06-07T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-06-05T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-06-05T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-06-05T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 5,
-		"date": "2018-06-05T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
+		"scope": "refs/heads/dev",
 		"intValue": 6,
-		"date": "2018-06-05T00:00:00.000Z"
+		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-06-04T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 0,
+		"date": "2018-07-03T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 10,
-		"date": "2018-06-04T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 0,
+		"date": "2018-07-03T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
+		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-06-04T00:00:00.000Z"
+		"date": "2018-07-03T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 12,
-		"date": "2018-06-04T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 2,
+		"date": "2018-07-03T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 23,
-		"date": "2018-06-04T00:00:00.000Z"
+		"scope": "refs/heads/dev",
+		"intValue": 2,
+		"date": "2018-07-03T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/dev",
+		"intValue": 0,
+		"date": "2018-07-02T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/dev",
+		"intValue": 0,
+		"date": "2018-07-02T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/dev",
+		"intValue": 0,
+		"date": "2018-07-02T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/dev",
+		"intValue": 1,
+		"date": "2018-07-02T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/dev",
+		"intValue": 1,
+		"date": "2018-07-02T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=37"
+			"href": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=43"
 		},
 		"web": {
 			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=79"
@@ -252,7 +279,7 @@
 				"inputs": {
 					"scriptType": "filePath",
 					"scriptName": "Labs-Deploy-AzureResourceGroup.ps1",
-					"arguments": "-azureAccountName \"$(azureAccountName)\" -azurePasswordString \"$(azurePassword)\"  -subscriptionID \"$(azureSubscriptionId)\" -buildId $(Build.BuildId)  -ResourceGroupLocation '$(azureResourceLocation)' -ArtifactStagingDirectory $(envFolder)  -UploadArtifacts -StorageAccountName “$(StorageAccountName)” -ResourceGroupName $(envFolder)-u$(labsUserId) -EnvironmentName \"$(azureEnvironmentName)\" -groupId '$(groupId)' -azureUserName labs-test-u$(labsUserId) -createAzureUser $false ",
+					"arguments": "-azureAccountName \"$(azureAccountName)\" -azurePasswordString \"$(azurePassword)\"  -subscriptionID \"$(azureSubscriptionId)\" -buildId $(Build.BuildId)  -ResourceGroupLocation '$(azureResourceLocation)' -ArtifactStagingDirectory $(envFolder)  -UploadArtifacts -StorageAccountName “$(StorageAccountName)” -ResourceGroupName $(envInstanceName)-$(envFolder)-u$(labsUserId) -EnvironmentName \"$(azureEnvironmentName)\" -groupId '$(groupId)' -azureUserName labs-test-u$(labsUserId) -createAzureUser $false ",
 					"workingFolder": "",
 					"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
 					"failOnStandardError": "true"
@@ -328,11 +355,11 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "6f8b93ef-b9cb-484d-a70d-bf04a4fbf350",
+		"id": "c7b967d3-afbc-4038-8346-475afde9f52d",
 		"type": "TfsGit",
 		"name": "labs-templates",
 		"url": "https://tfs.devopshub.cn/leansoft/Labs/_git/labs-templates",
-		"defaultBranch": "refs/heads/master",
+		"defaultBranch": "refs/heads/dev",
 		"clean": "true",
 		"checkoutSubmodules": false
 	},
@@ -367,19 +394,19 @@
 	},
 	"id": 79,
 	"name": "labs-templates-env-instance",
-	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=37",
+	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=43",
 	"uri": "vstfs:///Build/Definition/79",
 	"path": "\\labs-test",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 37,
-	"createdDate": "2018-06-07T13:09:43.593Z",
+	"revision": 43,
+	"createdDate": "2018-07-05T09:45:30.957Z",
 	"project": {
 		"id": "580b5af0-a2f5-4585-8ed6-dddf6a84502d",
 		"name": "Labs",
 		"url": "https://tfs.devopshub.cn/leansoft/_apis/projects/580b5af0-a2f5-4585-8ed6-dddf6a84502d",
 		"state": "wellFormed",
-		"revision": 357,
+		"revision": 377,
 		"visibility": 0
 	}
 }
