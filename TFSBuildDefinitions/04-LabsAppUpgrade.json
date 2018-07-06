@@ -24,12 +24,12 @@
 			"value": null,
 			"isSecret": true
 		},
+		"DATABASE_NAME": {
+			"value": ""
+		},
 		"DATABASE_PASSWORD": {
 			"value": null,
 			"isSecret": true
-		},
-		"DATABASE_PORT": {
-			"value": ""
 		},
 		"DATABASE_SERVER": {
 			"value": ""
@@ -43,9 +43,6 @@
 		"system.debug": {
 			"value": "false",
 			"allowOverride": true
-		},
-		"DATABASE_NAME": {
-			"value": "devopslabs"
 		}
 	},
 	"retentionRules": [{
@@ -71,6 +68,31 @@
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
+		"date": "2018-07-06T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-07-06T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-06T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 4,
+		"date": "2018-07-06T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 5,
+		"date": "2018-07-06T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
 		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
@@ -85,12 +107,12 @@
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 6,
+		"intValue": 7,
 		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 9,
+		"intValue": 10,
 		"date": "2018-07-05T00:00:00.000Z"
 	}, {
 		"name": "CanceledBuilds",
@@ -120,7 +142,7 @@
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=19"
+			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=28"
 		},
 		"web": {
 			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=9"
@@ -205,7 +227,7 @@
 				"enabled": true,
 				"continueOnError": false,
 				"alwaysRun": false,
-				"displayName": "在远程计算机上运行 shell commands",
+				"displayName": "SQL BACKUP",
 				"timeoutInMinutes": 0,
 				"condition": "succeeded()",
 				"task": {
@@ -216,7 +238,29 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "/home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit $(DATABASE_SERVER) $(DATABASE_PORT) $(DATABASE_NAME) $(DATABASE_USERNAME) $(DATABASE_PASSWORD) /home/azureuser/LabsUpgrade/SQLScripts_Up",
+					"commands": "/home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
+					"scriptPath": "",
+					"inline": "",
+					"args": "",
+					"failOnStdErr": "true"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "DATABASE UPGRADE",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "91443475-df55-4874-944b-39253b558790",
+					"versionSpec": "0.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"runOptions": "commands",
+					"commands": "/home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/azureuser/LabsUpgrade/SQLScripts_Up",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -310,13 +354,13 @@
 	},
 	"id": 9,
 	"name": "labs-app-upgrade",
-	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=19",
+	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=28",
 	"uri": "vstfs:///Build/Definition/9",
 	"path": "\\labs-test",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 19,
-	"createdDate": "2018-07-05T04:39:31.177Z",
+	"revision": 28,
+	"createdDate": "2018-07-06T09:41:17.603Z",
 	"project": {
 		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
 		"name": "labs-uat",
