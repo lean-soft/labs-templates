@@ -1,6 +1,5 @@
 {
 	"EnviromentName": "#{envFolder}#",
-	"ResourceGroupName": "#{destResourceGroupName}#",
 	"SourceSnapshot": {
 		"vmName": "#{vmName}#",
 		"snapshotName": "#{SourceSnapshotName}#",

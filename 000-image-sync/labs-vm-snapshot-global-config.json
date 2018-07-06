@@ -1,6 +1,5 @@
 [{
 		"EnviromentName": "ls112-tfs-server-2018",
-		"ResourceGroupName": "ls112-tfs-server-2018-chinanorth-master-rg",
 		"SourceSnapshot": {
 			"vmName": "tfs2018|imageId01",
 			"snapshotName": "ls112-tfs-server-2018-tfs2018-windows-snapshot-20180423.2",
@@ -10,7 +9,6 @@
 	},
 	{
 		"EnviromentName": "ls112-tfs-server-2018",
-		"ResourceGroupName": "ls112-tfs-server-2018-chinanorth-master-rg",
 		"SourceSnapshot": {
 			"vmName": "linux|imageId02",
 			"snapshotName": "ls112-tfs-server-2018-linuxagent-linux-snapshot-20180423.1",
@@ -19,7 +17,6 @@
 	},
 	{
 		"EnviromentName": "ls114-tfs-labs-vm",
-		"ResourceGroupName": "ls114-tfs-labs-vm-chinanorth-master-rg",
 		"SourceSnapshot": {
 			"vmName": "vsalm|imageId01",
 			"snapshotName": "ls114-tfs-labs-vm-vsalm-windows-snapshot-20180424.1",
