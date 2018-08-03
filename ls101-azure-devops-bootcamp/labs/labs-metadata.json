@@ -1,8 +1,15 @@
 {
-  "itemDisplayName": "微软研发云（TFS）",
-  "icon": "ubuntu",
-  "description": "基于微软云计算平台Microsoft Azure，微软研发云和容器技术Docker，所提供的端到端的DevOps开发工具链支持能力",
-  "summary": "基于微软云计算平台Microsoft Azure，微软研发云和容器技术Docker，所提供的端到端的DevOps开发工具链支持能力",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2017-06-21"
-}
+    "Name": "Ubuntu Linux 16.04 LTS",
+    "Overview": "Ubuntu Linux 16.04 LTS 云服务器",
+    "TFSBuildID": 0,
+    "GithubPath": "101-vm-simple-linux",
+    "IsPublic": true,
+    "AzureEnvironmentName": "China",
+    "ServiceType": "VirtualMachines",
+    "ConsumptionPerDay": 0.0,
+    "Description": "<p>Linux是一套免费使用和自由传播的<a href=\"https://baike.baidu.com/item/%E7%B1%BBUnix\" target=\"_blank\">类Unix</a><a href=\"https://baike.baidu.com/item/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/192\" target=\"_blank\">操作系统</a>，是一个基于<a href=\"https://baike.baidu.com/item/POSIX\" target=\"_blank\">POSIX</a>和<a href=\"https://baike.baidu.com/item/UNIX\" target=\"_blank\">UNIX</a>的多用户、<a href=\"https://baike.baidu.com/item/%E5%A4%9A%E4%BB%BB%E5%8A%A1/1011764\" target=\"_blank\">多任务</a>、支持<a href=\"https://baike.baidu.com/item/%E5%A4%9A%E7%BA%BF%E7%A8%8B/1190404\" target=\"_blank\">多线程</a>和多<a href=\"https://baike.baidu.com/item/CPU\" target=\"_blank\">CPU</a>的操作系统。它能运行主要的UNIX工具软件、应用程序和网络协议。它支持<a href=\"https://baike.baidu.com/item/32%E4%BD%8D/5812218\" target=\"_blank\">32位</a>和<a href=\"https://baike.baidu.com/item/64%E4%BD%8D\" target=\"_blank\">64位</a>硬件。Linux继承了<a href=\"https://baike.baidu.com/item/Unix\" target=\"_blank\">Unix</a>以<a href=\"https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C/143243\" target=\"_blank\">网络</a>为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>\r\n\r\n<p>Linux操作系统诞生于1991 年10 月5 日（这是第一次正式向外公布时间）。Linux存在着许多不同的Linux版本，但它们都使用了<a href=\"https://baike.baidu.com/item/Linux%E5%86%85%E6%A0%B8\" target=\"_blank\">Linux内核</a>。Linux可安装在各种计算机硬件设备中，比如<a href=\"https://baike.baidu.com/item/%E6%89%8B%E6%9C%BA/6342\" target=\"_blank\">手机</a>、<a href=\"https://baike.baidu.com/item/%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%84%91/1348389\" target=\"_blank\">平板电脑</a>、<a href=\"https://baike.baidu.com/item/%E8%B7%AF%E7%94%B1%E5%99%A8/108294\" target=\"_blank\">路由器</a>、视频游戏控制台、台式计算机、大型机和超级计算机。</p>\r\n\r\n<p>严格来讲，Linux这个词本身只表示Linux内核，但实际上人们已经习惯了用Linux来形容整个基于Linux内核，并且使用<a href=\"https://baike.baidu.com/item/GNU\" target=\"_blank\">GNU</a>工程各种工具和数据库的操作系统。</p>\r\n",
+    "PreviewImage": "1e91367b-24f1-4989-8741-f429c715f9a3",
+    "BackgroundImage": "01a8ad47-a72c-4341-b2b2-002d9816ce15",
+    "Services": null,
+    "ImageSyncInfo": null
+  }

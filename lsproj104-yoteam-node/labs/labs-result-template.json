@@ -1,0 +1,79 @@
+{
+	"Services": [{
+		"uniqueName": "YoTeamAspApp",
+		"displayname": "ASP.NET Core with App Service CI/CD",
+		"properties": [{
+				"key": "type",
+				"value": "#{type}#",
+				"type": "text"
+			},
+			{
+				"key": "Application Name",
+				"value": "#{applicationName}##{Build.BuildId}#",
+				"type": "text"
+			},
+			{
+				"key": "Project Home",
+				"value": "#{tfs}#/#{applicationName}##{Build.BuildId}#/_home",
+				"type": "url"
+			},
+			{
+				"key": "Git Rep URL",
+				"value": "#{tfs}#/_git/#{applicationName}##{Build.BuildId}#",
+				"type": "url"
+			},
+			{
+				"key": "Build Pipelines",
+				"value": "#{tfs}#/#{applicationName}##{Build.BuildId}#/_build",
+				"type": "url"
+			},
+			{
+				"key": "Release Pipelines",
+				"value": "#{tfs}#/#{applicationName}##{Build.BuildId}#/_release",
+				"type": "url"
+			},
+			{
+				"key": "Application Dev Env",
+				"value": "http://#{applicationName}##{Build.BuildId}#Dev.azurewebsites.net",
+				"type": "url"
+			},
+			{
+				"key": "Application QA Env",
+				"value": "http://#{applicationName}##{Build.BuildId}#QA.azurewebsites.net",
+				"type": "url"
+			},
+			{
+				"key": "Application Prod Env",
+				"value": "http://#{applicationName}##{Build.BuildId}#Prod.azurewebsites.net",
+				"type": "url"
+			}, {
+				"key": "Build Badge",
+				"value": "#{BuildBadge}#",
+				"type": "url"
+			}, {
+				"key": "Release Badge Dev",
+				"value": "#{releaseBadgeDev}#",
+				"type": "url"
+			}, {
+				"key": "Release Badge QA",
+				"value": "#{releaseBadgeQA}#",
+				"type": "url"
+			}, {
+				"key": "Release Badge Prod",
+				"value": "#{releaseBadgeProd}#",
+				"type": "url"
+			}
+
+
+		]
+	}],
+	"Info": {
+		"Subscription": {
+			"Id": "#{azureSubId}#"
+		},
+		"ResourceGroup": {
+			"Name": "#{applicationName}##{Build.BuildId}#",
+			"Location": ""
+		}
+	}
+}

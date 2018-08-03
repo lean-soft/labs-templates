@@ -1,7 +1,15 @@
 {
-  "itemDisplayName": "Gitlab",
-  "description": "Get your best ideas into development",
-  "summary": "Get your best ideas into development",
-  "githubUsername": "zhouwenyang",
-  "dateUpdated": "2017-11-20"
-}
+    "Name": "Gitlab 社区版",
+    "Overview": "GitLab 不仅仅是最受环境的 Git 企业级服务器，同时也提供了敏捷项目管理和流水线功能。",
+    "TFSBuildID": 0,
+    "GithubPath": "ls106-docker-gitlab-server",
+    "IsPublic": true,
+    "AzureEnvironmentName": "Global",
+    "ServiceType": "VirtualMachines",
+    "ConsumptionPerDay": 0.0,
+    "Description": "<p>GitLab 是一个用于仓库管理系统的开源项目，使用<a href=\"https://baike.baidu.com/item/Git\" target=\"_blank\">Git</a>作为代码管理工具，并在此基础上搭建起来的web服务。</p>\r\n",
+    "PreviewImage": "10cfc470-8b76-42d8-b742-173b72b32fac",
+    "BackgroundImage": "39a4a1d0-5469-4aab-bba8-93eafdba7a8e",
+    "Services": null,
+    "ImageSyncInfo": null
+  }

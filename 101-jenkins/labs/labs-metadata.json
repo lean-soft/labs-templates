@@ -1,8 +1,15 @@
 {
-  "itemDisplayName": "Jenkins on Azure",
-  "icon": "ubuntu",
-  "description": "This template allows you to deploy a secure Jenkins instance on a DS1_v2 size Linux Ubuntu 14.04 LTS VM.",
-  "summary": "This template allows you to deploy a secure Jenkins instance on a DS1_v2 size Linux Ubuntu 14.04 LTS VM.",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2017-06-21"
-}
+    "Name": "Jenkins",
+    "Overview": "最受欢迎的开源自动化流水线工具",
+    "TFSBuildID": 0,
+    "GithubPath": "101-jenkins",
+    "IsPublic": true,
+    "AzureEnvironmentName": "China",
+    "ServiceType": "VirtualMachines",
+    "ConsumptionPerDay": 0.0,
+    "Description": "<p>Jenkins是一个开源软件项目，是基于Java开发的一种<a href=\"https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90\" target=\"_blank\">持续集成</a>工具，用于监控持续重复的工作，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。</p>\r\n",
+    "PreviewImage": "0f83a432-342a-487f-8113-c4d9ac04e216",
+    "BackgroundImage": "0ebeab27-a425-48fd-8420-bd0300a8ec88",
+    "Services": null,
+    "ImageSyncInfo": null
+  }

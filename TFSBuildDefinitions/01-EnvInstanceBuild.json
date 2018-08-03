@@ -105,78 +105,53 @@
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-05T00:00:00.000Z"
+		"intValue": 1,
+		"date": "2018-07-24T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/dev",
 		"intValue": 2,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-24T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-24T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/dev",
-		"intValue": 4,
-		"date": "2018-07-05T00:00:00.000Z"
+		"intValue": 2,
+		"date": "2018-07-24T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/dev",
-		"intValue": 6,
-		"date": "2018-07-05T00:00:00.000Z"
+		"intValue": 5,
+		"date": "2018-07-24T00:00:00.000Z"
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-07-03T00:00:00.000Z"
+		"date": "2018-07-23T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-03T00:00:00.000Z"
+		"intValue": 1,
+		"date": "2018-07-23T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-07-03T00:00:00.000Z"
+		"date": "2018-07-23T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/dev",
-		"intValue": 2,
-		"date": "2018-07-03T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 2,
-		"date": "2018-07-03T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/dev",
 		"intValue": 0,
-		"date": "2018-07-02T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-02T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-02T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 1,
-		"date": "2018-07-02T00:00:00.000Z"
+		"date": "2018-07-23T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/dev",
 		"intValue": 1,
-		"date": "2018-07-02T00:00:00.000Z"
+		"date": "2018-07-23T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
@@ -396,7 +371,7 @@
 	"name": "labs-templates-env-instance",
 	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=43",
 	"uri": "vstfs:///Build/Definition/79",
-	"path": "\\labs-test",
+	"path": "\\labs-test.devopshub.cn",
 	"type": 2,
 	"queueStatus": 0,
 	"revision": 43,
@@ -406,7 +381,7 @@
 		"name": "Labs",
 		"url": "https://tfs.devopshub.cn/leansoft/_apis/projects/580b5af0-a2f5-4585-8ed6-dddf6a84502d",
 		"state": "wellFormed",
-		"revision": 377,
+		"revision": 381,
 		"visibility": 0
 	}
 }

@@ -1,8 +1,19 @@
 {
-  "itemDisplayName": "Team Foudation Server",
-  "icon": "ubuntu",
-  "description": "提供一组协作软件开发工具，它与你现有的 IDE 或编辑器集成，从而使你的跨功能团队可以在所有大小的软件项目上高效工作。",
-  "summary": "提供一组协作软件开发工具，它与你现有的 IDE 或编辑器集成，从而使你的跨功能团队可以在所有大小的软件项目上高效工作。",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2017-06-21"
+	"name": "TFS2018 培训环境",
+	"overview": "提供一套基于TFS2018的标准培训环境",
+	"tFSBuildID": 0,
+	"githubPath": "ls114-tfs-labs-vm",
+	"isPublic": true,
+	"azureEnvironmentName": "China",
+	"serviceType": "VirtualMachines",
+	"consumptionPerDay": 0.0,
+	"description": "<h3><strong>什么是 Team Foundation Server？</strong></h3>\r\n\r\n<p>针对整个团队的协作软件开发工具</p>\r\n\r\n<p>Team Foundation Server 提供一组协作软件开发工具，它与你现有的 IDE 或编辑器集成，从而使你的跨功能团队可以在所有大小的软件项目上高效工作。</p>\r\n\r\n<h3><strong>版本控制</strong></h3>\r\n\r\n<p>无限制、专用、安全</p>\r\n\r\n<p>使用无限制专用存储库对代码进行存储并协作编写代码。 使用 Git 来进行分布式版本控制，或使用 Team Foundation 版本控制 (TFVC) 来实现集中式版本控制。 通过拉取请求和代码审阅轻松地与代码协作。 管理权限和策略以保护你的存储库。</p>\r\n\r\n<p><a href=\"https://www.visualstudio.com/zh-hans/team-services/tfvc/\">了解更多</a></p>\r\n\r\n<p><img alt=\"Version control\" src=\"https://www.visualstudio.com/zh-hans/wp-content/uploads/2016/06/VersionControl.jpg\" /></p>\r\n\r\n<p><img alt=\"Agile\" src=\"https://www.visualstudio.com/zh-hans/wp-content/uploads/2016/06/AgileTools.jpg\" /></p>\r\n\r\n<h3>适用于敏捷团队的工具</h3>\r\n\r\n<p>看板、Scrum、仪表板</p>\r\n\r\n<p>启用你的自定义敏捷过程。 通过积压工作 (backlog) 和可自定义的看板捕获和跟踪工作情况，并确定工作优先级。 通过直接链接到代码和生成的工作项目，确保透明性和可跟踪性。 自定义丰富的仪表板以便更轻松地报告。</p>\r\n\r\n<p><a href=\"https://www.visualstudio.com/zh-hans/team-services/agile-tools/\">了解更多</a></p>\r\n\r\n<h3>持续集成</h3>\r\n\r\n<p>版本、程序包、测试、发布、重复</p>\r\n\r\n<p>通过持续集成 (CI) 版本在早期发现质量问题。 使用发布管理自动化跟踪你的所有部署。 使用我们广泛的测试工具组来维护较高的质量。 通过重复使用代码和模块更快地交付程序包管理。</p>\r\n\r\n<p><a href=\"https://www.visualstudio.com/zh-hans/team-services/continuous-integration/\">了解更多</a></p>\r\n\r\n<p><img alt=\"Continuous integration\" src=\"https://www.visualstudio.com/zh-hans/wp-content/uploads/2016/06/continuousDeploymentRight636x350-1.png\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3>Java 支持</h3>\r\n\r\n<p>对任何平台进行开发</p>\r\n\r\n<p>使用你选择的 IDE：Eclipse、IntelliJ、Android Studio、Visual Studio Code 等。 从你的 Git、Subversion 和 TFVC 存储库使用 Ant、Maven 和 Gradle 构建你的代码。 借助本机功能或通过与系统（如 Jenkins）的集成来实现 CI/CD。 支持跨平台和移动语言，包括：C++、PHP、Python、Go、Swift 等更多语言。</p>\r\n\r\n<p><a href=\"https://java.visualstudio.com/\">了解更多</a></p>\r\n\r\n<h3>集成</h3>\r\n\r\n<p>开放且可扩展</p>\r\n\r\n<p>可以使用 REST API 和 OAuth 2.0 等开放标准将你的自定义工具或第三方服务与 Team Foundation Server 集成。 从我们的扩展应用商店集成你最喜爱的工具和服务。</p>\r\n\r\n<p><a href=\"https://www.visualstudio.com/zh-hans/team-services/extend/\">了解更多</a></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+	"previewImage": "a504bae9-cbea-4764-9a2e-0d95b5a929b0",
+	"backgroundImage": "99fc0dd9-a775-4c79-ae1e-3b3ac5e43223",
+	"services": null,
+	"imageRefInfo": [{
+		"vmName": "vsalm|imageId01",
+		"snapshotName": "ls0114x01-tfs-labs-vm-vsalm-windows-snapshot-20180424.1",
+		"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/l0kf0qqsphwz/abcd?sv=2017-04-17&sr=b&si=9776174d-b19e-4a40-82c5-c73e06264b3f&sig=batVa9p%2BX%2FpFiD%2BqU6dG%2F7Nq9EpWOWgBaJ8G5FZkILw%3D"
+	}]
 }

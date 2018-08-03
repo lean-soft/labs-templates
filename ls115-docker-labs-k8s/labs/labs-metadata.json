@@ -1,8 +1,15 @@
 {
-  "itemDisplayName": "Team Foudation Server",
-  "icon": "ubuntu",
-  "description": "用于自动部署，扩展和管理容器化应用程序的开源系统。",
-  "summary": "用于自动部署，扩展和管理容器化应用程序的开源系统。",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2018-06-21"
-}
+    "Name": "ACS- Kubernetes 集群",
+    "Overview": "基于Azure的ACS服务创建的K8s环境",
+    "TFSBuildID": 0,
+    "GithubPath": "ls115-docker-labs-k8s",
+    "IsPublic": true,
+    "AzureEnvironmentName": "Global",
+    "ServiceType": "VirtualMachines",
+    "ConsumptionPerDay": 0.0,
+    "Description": "<h3>使用 Kubernetes</h3>\r\n\r\n<p>Kubernetes 对容器化应用程序自动进行部署、扩展和管理。 它具有一组丰富的功能，包括：</p>\r\n\r\n<ul>\r\n\t<li>自动装箱</li>\r\n\t<li>自我修复</li>\r\n\t<li>水平扩展</li>\r\n\t<li>服务发现和负载均衡</li>\r\n\t<li>自动推出和回退</li>\r\n\t<li>机密和配置管理</li>\r\n\t<li>存储业务流程</li>\r\n\t<li>Batch 执行</li>\r\n</ul>\r\n\r\n<p>通过 Azure 容器服务部署的 Kubernetes 的体系结构图：</p>\r\n\r\n<p><img alt=\"配置为使用 Kubernetes 的 Azure 容器服务。\" src=\"https://docs.microsoft.com/zh-cn/azure/container-service/kubernetes/media/acs-intro/kubernetes.png\" /></p>\r\n",
+    "PreviewImage": "792b9a89-7458-4031-8a31-185c1b7fd2d7",
+    "BackgroundImage": "62dd69b1-71de-40db-a5e8-6086f7e74d6d",
+    "Services": null,
+    "ImageSyncInfo": null
+  }

@@ -1,8 +1,25 @@
 {
-  "itemDisplayName": "Team Foudation Server",
-  "icon": "ubuntu",
-  "description": "提供一组协作软件开发工具，它与你现有的 IDE 或编辑器集成，从而使你的跨功能团队可以在所有大小的软件项目上高效工作。",
-  "summary": "提供一组协作软件开发工具，它与你现有的 IDE 或编辑器集成，从而使你的跨功能团队可以在所有大小的软件项目上高效工作。",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2017-06-21"
+	"name": "TFS2018 生产环境",
+	"overview": "提供一套基于TFS生产环境，包括Windows构建代理以及Linux构建代理",
+	"tFSBuildID": 0,
+	"githubPath": "ls112-tfs-server-2018",
+	"isPublic": true,
+	"azureEnvironmentName": "China",
+	"serviceType": "VirtualMachines",
+	"consumptionPerDay": 0.0,
+	"description": "<h3><strong>Team Foundation Server 2018 生产环境</strong></h3>\r\n\r\n<p><strong><img alt=\"\" src=\"https://visualstudio.microsoft.com/zh-hans/wp-content/uploads/2018/02/vsts-1x.jpg\" /></strong></p>\r\n\r\n<p>微软企业级研发管理平台 TFS (Team Foundation Server) 全流程研发管理平台，T第一版发布于2005年，至今已经持续发展了12年时间。</p>\r\n\r\n<p>微软的主要产品线，包括Windows, Office, Visual Studio, Xbox以及Azure云计算平台都在使用TFS作为研发管理平台，经过了12年超过6个大版本的迭代，VSTS/TFS已经具备了管理上万人研发团队进行大规模复杂项目开发的经过验证的能力。无论开发团队使用传统的瀑布，CMMI或者新兴的敏捷，Scrum或者Kanban来组织自己的开发流程，VSTS/TFS都能提供完善的工具和高度可定制性来满足要求。仅在Visual Studio产品线，VSTS/TFS就管理着超过3亿6千万源代码文件，1千9百万工作项和近5000名开发人员，每天要进行超过22万次版本编译，总数据量超过15TB。</p>\r\n\r\n<p>TFS 内置了软件研发管理所需要的全部关键流程的工具支持，包括：</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>敏捷开发／项目管理功能</h2>\r\n\r\n<p><img alt=\"vsts-04\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-04.png\" /> <img alt=\"vsts-05\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-05.png\" /> <img alt=\"vsts-06\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-06.png\" /></p>\r\n\r\n<h2>代码库功能</h2>\r\n\r\n<p><img alt=\"vsts-07\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-07.png\" /> <img alt=\"vsts-08\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-08.png\" /> <img alt=\"vsts-09\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-09.png\" /></p>\r\n\r\n<h2>自动化CI/CD功能</h2>\r\n\r\n<p><img alt=\"vsts-10\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-10.png\" /> <img alt=\"vsts-11\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-11.png\" /> <img alt=\"vsts-12\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-12.png\" /> <img alt=\"vsts-13\" src=\"http://devopshub.cn/wp-content/uploads/2017/11/vsts-13.png\" /></p>\r\n",
+	"previewImage": "803c107a-456d-4930-a0d0-04e3018daaa8",
+	"backgroundImage": "fa97da6a-e720-4a28-bd3f-848c1e7005bf",
+	"services": null,
+	"imageRefInfo": [{
+			"vmName": "tfs2018|imageId01",
+			"snapshotName": "ls0112x01-tfs-server-2018-tfs2018-windows-snapshot-20180423.2",
+			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/s3qr1zvlwgds/abcd?sv=2017-04-17&sr=b&si=41ef01d4-e79b-4afe-ba3f-989b3ece3c69&sig=vHayFqZavuH323eLr3t6aUh5uB53z0V64njO3FMEivY%3D"
+		},
+		{
+			"vmName": "linux|imageId02",
+			"snapshotName": "ls0112x02-tfs-server-2018-linuxagent-linux-snapshot-20180423.1",
+			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/wfgwsn5bmpg1/abcd?sv=2017-04-17&sr=b&si=5c81fa86-0a14-415d-83da-3b9d8cb2b71e&sig=m%2FA6Ll%2Boa83Bgnjx9YsHvIYKMtEAcuM50n7AzK9GgGg%3D"
+		}
+	]
 }

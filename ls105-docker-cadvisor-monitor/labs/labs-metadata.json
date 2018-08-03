@@ -1,7 +1,15 @@
 {
-  "itemDisplayName": "Cadvisor",
-  "description": "Analyzes resource usage and performance characteristics of running containers.",
-  "summary": "Analyzes resource usage and performance characteristics of running containers.",
-  "githubUsername": "zhouwenyang",
-  "dateUpdated": "2017-11-20"
-}
+    "Name": "Google cAdvisor",
+    "Overview": "谷歌出品的简单易用的开源容器监控工具",
+    "TFSBuildID": 0,
+    "GithubPath": "ls105-docker-cadvisor-monitor",
+    "IsPublic": true,
+    "AzureEnvironmentName": "Global",
+    "ServiceType": "VirtualMachines",
+    "ConsumptionPerDay": 0.0,
+    "Description": null,
+    "PreviewImage": "df010f18-c166-4fd2-92cd-0d7402328442",
+    "BackgroundImage": "e3d1b1cc-1f24-4ccb-996d-83dec0f1a41d",
+    "Services": null,
+    "ImageSyncInfo": null
+  }

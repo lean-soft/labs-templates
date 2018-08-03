@@ -1,0 +1,31 @@
+{
+  "generator-team": {
+    "promptValues": {
+	  "envFolder": "#{envFolder}#",
+      "tfs": "#{tfs}#",
+      "queue": "#{queue}#",
+      "type": "#{type}#",
+      "applicationName": "#{applicationName}##{Build.BuildId}#",
+	  
+      "azureSub": "#{azureSub}#",
+	  "azureSubId": "#{azureSubId}#",	 
+	  "tenantId": "#{tenantId}#",
+	  "servicePrincipalId": "#{servicePrincipalId}#",
+	  "servicePrincipalKey": "#{servicePrincipalKey}#",
+	  
+	  "dockerHost":"#{dockerHost}#",
+	  "dockerCertPath":"#{dockerCertPath}#",
+	  "dockerRegistry":"#{dockerRegistry}#",
+	  "dockerRegistryId":"#{dockerRegistryId}#",
+	  "dockerPorts":"#{dockerPorts}#",
+	  "dockerRegistryPassword":"#{dockerRegistryPassword}#",
+	  
+	  "groupId": "#{groupId}#",
+	  "customFolder": "#{customFolder}#",
+	  "pat": "#{pat}#",
+	  
+      "installDep": "#{installDep}#",
+	  "target": "#{target}#",
+    }
+  }
+}

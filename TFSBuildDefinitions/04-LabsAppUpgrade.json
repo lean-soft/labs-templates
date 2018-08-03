@@ -68,81 +68,131 @@
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-06T00:00:00.000Z"
+		"date": "2018-08-01T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-07-06T00:00:00.000Z"
+		"intValue": 5,
+		"date": "2018-08-01T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-06T00:00:00.000Z"
+		"date": "2018-08-01T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 4,
-		"date": "2018-07-06T00:00:00.000Z"
+		"date": "2018-08-01T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 5,
-		"date": "2018-07-06T00:00:00.000Z"
+		"intValue": 9,
+		"date": "2018-08-01T00:00:00.000Z"
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-31T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 3,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-31T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-31T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 7,
-		"date": "2018-07-05T00:00:00.000Z"
+		"intValue": 6,
+		"date": "2018-07-31T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 9,
+		"date": "2018-07-31T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-30T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-30T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-30T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 6,
+		"date": "2018-07-30T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 6,
+		"date": "2018-07-30T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-27T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-27T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-27T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 10,
+		"date": "2018-07-27T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 10,
-		"date": "2018-07-05T00:00:00.000Z"
+		"date": "2018-07-27T00:00:00.000Z"
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-04T00:00:00.000Z"
+		"date": "2018-07-26T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-07-04T00:00:00.000Z"
+		"intValue": 3,
+		"date": "2018-07-26T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-04T00:00:00.000Z"
+		"date": "2018-07-26T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 3,
-		"date": "2018-07-04T00:00:00.000Z"
+		"intValue": 9,
+		"date": "2018-07-26T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 4,
-		"date": "2018-07-04T00:00:00.000Z"
+		"intValue": 12,
+		"date": "2018-07-26T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=28"
+			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=42"
 		},
 		"web": {
 			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=9"
@@ -172,7 +222,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "wget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O /home/azureuser/LabsUpgrade.tar\nsudo tar xvf /home/azureuser/LabsUpgrade.tar -C /home/azureuser\nchmod 777 /home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit\n",
+					"commands": "sudo rm -rf /home/azureuser/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O /home/azureuser/LabsUpgrade.tar\nsudo tar xvf /home/azureuser/LabsUpgrade.tar -C /home/azureuser\nchmod 777 /home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit\n",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -271,6 +321,28 @@
 				"enabled": true,
 				"continueOnError": false,
 				"alwaysRun": false,
+				"displayName": "初始化基础信息",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "91443475-df55-4874-944b-39253b558790",
+					"versionSpec": "0.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"runOptions": "commands",
+					"commands": "sudo cp  /home/azureuser/LabsUpgrade/labs-deploy/init.sh /home/azureuser/labs-deploy/init.sh\nsudo chmod 777 /home/azureuser/labs-deploy/init.sh\n/home/azureuser/labs-deploy/init.sh\n",
+					"scriptPath": "",
+					"inline": "",
+					"args": "",
+					"failOnStdErr": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
 				"displayName": "在远程计算机上运行 shell commands",
 				"timeoutInMinutes": 0,
 				"condition": "succeeded()",
@@ -282,7 +354,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ndocker-compose -f /home/azureuser/labs-deploy/docker-compose.yml -f /home/azureuser/labs-deploy/docker-compose-override.yml -p labs up -d",
+					"commands": "export LABS_IP_ADDRESS=`hostname -i`\ndocker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ndocker-compose -f /home/azureuser/labs-deploy/docker-compose.yml -f /home/azureuser/labs-deploy/docker-compose-override.yml -p labs up -d",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -354,13 +426,13 @@
 	},
 	"id": 9,
 	"name": "labs-app-upgrade",
-	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=28",
+	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=42",
 	"uri": "vstfs:///Build/Definition/9",
-	"path": "\\labs-test",
+	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 28,
-	"createdDate": "2018-07-06T09:41:17.603Z",
+	"revision": 42,
+	"createdDate": "2018-08-01T03:47:47.807Z",
 	"project": {
 		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
 		"name": "labs-uat",
