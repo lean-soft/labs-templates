@@ -222,7 +222,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "sudo rm -rf /home/azureuser/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O /home/azureuser/LabsUpgrade.tar\nsudo tar xvf /home/azureuser/LabsUpgrade.tar -C /home/azureuser\nchmod 777 /home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit\n",
+					"commands": "sudo rm -rf /home/localadmin/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O /home/localadmin/LabsUpgrade.tar\nsudo tar xvf /home/localadmin/LabsUpgrade.tar -C /home/localadmin\nchmod 777 /home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit\n",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -244,7 +244,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "docker-compose -f /home/azureuser/labs-deploy/docker-compose.yml -f /home/azureuser/labs-deploy/docker-compose-override.yml down",
+					"commands": "docker-compose -f /home/localadmin/labs-deploy/docker-compose.yml -f /home/localadmin/labs-deploy/docker-compose-override.yml down",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -266,7 +266,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "sudo cp /home/azureuser/LabsUpgrade/labs-deploy/docker-compose.yml /home/azureuser/labs-deploy/docker-compose.yml",
+					"commands": "sudo cp /home/localadmin/LabsUpgrade/labs-deploy/docker-compose.yml /home/localadmin/labs-deploy/docker-compose.yml",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -288,7 +288,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "/home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
+					"commands": "/home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -310,7 +310,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "/home/azureuser/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/azureuser/LabsUpgrade/SQLScripts_Up",
+					"commands": "/home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/localadmin/LabsUpgrade/SQLScripts_Up",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -332,7 +332,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "sudo cp  /home/azureuser/LabsUpgrade/labs-deploy/init.sh /home/azureuser/labs-deploy/init.sh\nsudo chmod 777 /home/azureuser/labs-deploy/init.sh\n/home/azureuser/labs-deploy/init.sh\n",
+					"commands": "sudo cp  /home/localadmin/LabsUpgrade/labs-deploy/init.sh /home/localadmin/labs-deploy/init.sh\nsudo chmod 777 /home/localadmin/labs-deploy/init.sh\n/home/localadmin/labs-deploy/init.sh\n",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -354,7 +354,7 @@
 				"inputs": {
 					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
-					"commands": "export LABS_IP_ADDRESS=`hostname -i`\ndocker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ndocker-compose -f /home/azureuser/labs-deploy/docker-compose.yml -f /home/azureuser/labs-deploy/docker-compose-override.yml -p labs up -d",
+					"commands": "export LABS_IP_ADDRESS=`hostname -i`\ndocker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ndocker-compose -f /home/localadmin/labs-deploy/docker-compose.yml -f /home/localadmin/labs-deploy/docker-compose-override.yml -p labs up -d",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
