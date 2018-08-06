@@ -14,6 +14,6 @@
 	"imageRefInfo": [{
 		"vmName": "vsalm|imageId01",
 		"snapshotName": "ls0114x01-tfs-labs-vm-vsalm-windows-snapshot-20180424.1",
-		"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/l0kf0qqsphwz/abcd?sv=2017-04-17&sr=b&si=9776174d-b19e-4a40-82c5-c73e06264b3f&sig=batVa9p%2BX%2FpFiD%2BqU6dG%2F7Nq9EpWOWgBaJ8G5FZkILw%3D"
+		"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/l0kf0qqsphwz/abcd?sv=2017-04-17&sr=b&si=ff4d1f69-8096-4350-89d4-0a808b9e006d&sig=UbbctxXgeZMQn%2FSBc7%2FgPoWbKjG3X2EEdM%2FXMwwkD3A%3D"
 	}]
 }
