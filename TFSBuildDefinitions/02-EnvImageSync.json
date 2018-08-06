@@ -364,11 +364,11 @@
 			}
 		},
 		"id": 155,
-		"name": "LSEN-MPN150-7-win-agt",
+		"name": "Default",
 		"url": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155",
 		"pool": {
 			"id": 18,
-			"name": "LSEN-MPN150-7-win-agt"
+			"name": "Default"
 		}
 	},
 	"id": 94,

@@ -249,11 +249,11 @@
 			}
 		},
 		"id": 5,
-		"name": "LSEN-MPN150-7-win-agt",
+		"name": "Default",
 		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5",
 		"pool": {
 			"id": 18,
-			"name": "LSEN-MPN150-7-win-agt"
+			"name": "Default"
 		}
 	},
 	"id": 4,
