@@ -24,12 +24,18 @@
 			"value": "false",
 			"allowOverride": true
 		},
+		"tfs_collection": {
+			"value": ""
+		},
 		"tfs_password": {
 			"value": null,
 			"isSecret": true
 		},
+		"tfs_project": {
+			"value": ""
+		},
 		"tfs_username": {
-			"value": "labs-service"
+			"value": ""
 		}
 	},
 	"retentionRules": [{
@@ -45,35 +51,11 @@
 	"tags": [],
 	"metrics": [{
 		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/master",
+		"scope": "master",
 		"intValue": 0
 	}, {
 		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "$/labs-prod",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "$/labs-prod",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/master",
+		"scope": "master",
 		"intValue": 0
 	}, {
 		"name": "CurrentBuildsInQueue",
@@ -85,64 +67,64 @@
 		"intValue": 0
 	}, {
 		"name": "CanceledBuilds",
+		"scope": "master",
+		"intValue": 0,
+		"date": "2018-08-06T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "master",
+		"intValue": 1,
+		"date": "2018-08-06T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "master",
+		"intValue": 0,
+		"date": "2018-08-06T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "master",
+		"intValue": 0,
+		"date": "2018-08-06T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "master",
+		"intValue": 1,
+		"date": "2018-08-06T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-09T00:00:00.000Z"
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-07-09T00:00:00.000Z"
+		"intValue": 7,
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-09T00:00:00.000Z"
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 2,
-		"date": "2018-07-09T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 3,
-		"date": "2018-07-09T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-09T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-09T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-09T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-07-09T00:00:00.000Z"
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-07-09T00:00:00.000Z"
+		"intValue": 10,
+		"date": "2018-08-06T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88"
+			"href": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=17"
 		},
 		"web": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/index?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
 		},
 		"editor": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/definitionEditor?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -155,7 +137,7 @@
 				"enabled": true,
 				"continueOnError": false,
 				"alwaysRun": false,
-				"displayName": "运行 git",
+				"displayName": "运行 git config",
 				"timeoutInMinutes": 0,
 				"condition": "succeeded()",
 				"task": {
@@ -165,7 +147,7 @@
 				},
 				"inputs": {
 					"filename": "git",
-					"arguments": "pull https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates",
+					"arguments": "config --global user.email \"lab-service@leansoftx.com\"",
 					"workingFolder": "",
 					"failOnStandardError": "false"
 				}
@@ -174,7 +156,7 @@
 				"enabled": true,
 				"continueOnError": false,
 				"alwaysRun": false,
-				"displayName": "运行 git",
+				"displayName": "运行 git config",
 				"timeoutInMinutes": 0,
 				"condition": "succeeded()",
 				"task": {
@@ -184,7 +166,45 @@
 				},
 				"inputs": {
 					"filename": "git",
-					"arguments": "push https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates head:master",
+					"arguments": "config --global user.name \"lab-service\"",
+					"workingFolder": "",
+					"failOnStandardError": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "运行 git pull",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"filename": "git",
+					"arguments": "pull http://$(tfs_username):$(tfs_password)@$(tfs_collection)/$(tfs_project)/_git/labs-templates --allow-unrelated-histories",
+					"workingFolder": "",
+					"failOnStandardError": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "运行 git push",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"filename": "git",
+					"arguments": "push http://$(tfs_username):$(tfs_password)@$(tfs_collection)/$(tfs_project)/_git/labs-templates head:master",
 					"workingFolder": "labs-templates.git",
 					"failOnStandardError": "false"
 				}
@@ -214,7 +234,7 @@
 			"fetchDepth": "0",
 			"gitLfsSupport": "false",
 			"reportBuildStatus": "true",
-			"connectedServiceId": "28b327f7-fe97-4ef1-a583-807f5cac4127",
+			"connectedServiceId": "a0a296e1-345b-40ad-9e08-64a13f078d88",
 			"skipSyncSource": "false",
 			"labelSourcesFormat": "$(build.buildNumber)",
 			"labelSources": "0"
@@ -230,47 +250,47 @@
 	"processParameters": {},
 	"quality": 1,
 	"authoredBy": {
-		"displayName": "徐磊",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/f84bdc63-f2ba-4c65-a877-0420cb73fe8f",
+		"displayName": "Administrator",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/Identities/310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
 		"_links": {
 			"avatar": {
-				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"
+				"href": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
 			}
 		},
-		"id": "f84bdc63-f2ba-4c65-a877-0420cb73fe8f",
-		"uniqueName": "LEANSOFT\\leixu",
-		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"
+		"id": "310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
+		"uniqueName": "BOX-TFS\\Administrator",
+		"imageUrl": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
 	},
 	"drafts": [],
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5"
+				"href": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1"
 			}
 		},
-		"id": 5,
+		"id": 1,
 		"name": "Default",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1",
 		"pool": {
-			"id": 18,
+			"id": 1,
 			"name": "Default"
 		}
 	},
 	"id": 4,
 	"name": "labs-templates-repo-sync",
-	"url": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88",
+	"url": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=17",
 	"uri": "vstfs:///Build/Definition/4",
-	"path": "\\labs-prod",
+	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 88,
-	"createdDate": "2018-07-09T10:29:34.200Z",
+	"revision": 17,
+	"createdDate": "2018-08-06T14:09:24.757Z",
 	"project": {
-		"id": "ee4c678f-88aa-4921-bca5-52957580be6c",
-		"name": "labs-prod",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/ee4c678f-88aa-4921-bca5-52957580be6c",
+		"id": "5700b7d1-78b8-476f-b3f2-6475802cbf22",
+		"name": "box-worker",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/projects/5700b7d1-78b8-476f-b3f2-6475802cbf22",
 		"state": "wellFormed",
-		"revision": 21,
+		"revision": 10,
 		"visibility": 0
 	}
 }
