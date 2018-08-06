@@ -68,137 +68,37 @@
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-01T00:00:00.000Z"
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 5,
-		"date": "2018-08-01T00:00:00.000Z"
+		"intValue": 1,
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-01T00:00:00.000Z"
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 4,
-		"date": "2018-08-01T00:00:00.000Z"
+		"intValue": 1,
+		"date": "2018-08-06T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 9,
-		"date": "2018-08-01T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-31T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 3,
-		"date": "2018-07-31T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-31T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 6,
-		"date": "2018-07-31T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 9,
-		"date": "2018-07-31T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-30T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-30T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-30T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 6,
-		"date": "2018-07-30T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 6,
-		"date": "2018-07-30T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-27T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-27T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-27T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 10,
-		"date": "2018-07-27T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 10,
-		"date": "2018-07-27T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-26T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 3,
-		"date": "2018-07-26T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-07-26T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 9,
-		"date": "2018-07-26T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/master",
-		"intValue": 12,
-		"date": "2018-07-26T00:00:00.000Z"
+		"intValue": 2,
+		"date": "2018-08-06T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=42"
+			"href": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/3?revision=9"
 		},
 		"web": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=9"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/index?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=3"
 		},
 		"editor": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=9"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/definitionEditor?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=3"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -220,9 +120,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "sudo rm -rf /home/localadmin/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O /home/localadmin/LabsUpgrade.tar\nsudo tar xvf /home/localadmin/LabsUpgrade.tar -C /home/localadmin\nchmod 777 /home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit\n",
+					"commands": "sudo rm -rf ~/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O ~/LabsUpgrade.tar\nsudo tar xvf ~/LabsUpgrade.tar -C ~/\nchmod 777 ~/LabsUpgrade/SQLToolkit/SQLToolkit\n",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -242,9 +142,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "docker-compose -f /home/localadmin/labs-deploy/docker-compose.yml -f /home/localadmin/labs-deploy/docker-compose-override.yml down",
+					"commands": "docker-compose -f ~/labs-deploy/docker-compose.yml -f ~/labs-deploy/docker-compose-override.yml down",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -264,9 +164,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "sudo cp /home/localadmin/LabsUpgrade/labs-deploy/docker-compose.yml /home/localadmin/labs-deploy/docker-compose.yml",
+					"commands": "sudo cp ~/LabsUpgrade/labs-deploy/docker-compose.yml ~/labs-deploy/docker-compose.yml",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -286,9 +186,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "/home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
+					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -308,9 +208,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "/home/localadmin/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/localadmin/LabsUpgrade/SQLScripts_Up",
+					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path ~/LabsUpgrade/SQLScripts_Up",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -330,9 +230,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "sudo cp  /home/localadmin/LabsUpgrade/labs-deploy/init.sh /home/localadmin/labs-deploy/init.sh\nsudo chmod 777 /home/localadmin/labs-deploy/init.sh\n/home/localadmin/labs-deploy/init.sh\n",
+					"commands": "sudo cp  ~/LabsUpgrade/labs-deploy/init.sh ~/labs-deploy/init.sh\nsudo chmod 777 ~/labs-deploy/init.sh\n~/labs-deploy/init.sh\n",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -352,9 +252,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "export LABS_IP_ADDRESS=`hostname -i`\ndocker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ndocker-compose -f /home/localadmin/labs-deploy/docker-compose.yml -f /home/localadmin/labs-deploy/docker-compose-override.yml -p labs up -d",
+					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy\ndocker-compose -f ~/labs-deploy/docker-compose.yml -f ~/labs-deploy/docker-compose-override.yml -p labs up -d",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -387,10 +287,10 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "6bd6eb11-33a7-40a3-b2de-ff8799dd4862",
+		"id": "b81cd44f-cbcf-442e-b6bd-359e94e011bc",
 		"type": "TfsGit",
 		"name": "labs-templates",
-		"url": "https://tfs.devopshub.cn/CloudEdge/labs-uat/_git/labs-templates",
+		"url": "http://box-tfs:8080/tfs/DefaultCollection/box-worker/_git/labs-templates",
 		"defaultBranch": "refs/heads/master",
 		"clean": "false",
 		"checkoutSubmodules": false
@@ -398,47 +298,47 @@
 	"processParameters": {},
 	"quality": 1,
 	"authoredBy": {
-		"displayName": "周文洋(Jacky Zhou)",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/ffb8b435-3a09-463a-aed9-37c4d046c406",
+		"displayName": "Administrator",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/Identities/310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
 		"_links": {
 			"avatar": {
-				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
+				"href": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
 			}
 		},
-		"id": "ffb8b435-3a09-463a-aed9-37c4d046c406",
-		"uniqueName": "LEANSOFT\\jackyzhou",
-		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
+		"id": "310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
+		"uniqueName": "BOX-TFS\\Administrator",
+		"imageUrl": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
 	},
 	"drafts": [],
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9"
+				"href": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1"
 			}
 		},
-		"id": 9,
+		"id": 1,
 		"name": "Default",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1",
 		"pool": {
-			"id": 18,
+			"id": 1,
 			"name": "Default"
 		}
 	},
-	"id": 9,
+	"id": 3,
 	"name": "labs-app-upgrade",
-	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/9?revision=42",
-	"uri": "vstfs:///Build/Definition/9",
+	"url": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/3?revision=9",
+	"uri": "vstfs:///Build/Definition/3",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 42,
-	"createdDate": "2018-08-01T03:47:47.807Z",
+	"revision": 9,
+	"createdDate": "2018-08-06T12:05:51.960Z",
 	"project": {
-		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
-		"name": "labs-uat",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/fcb03491-0ecf-419d-aa04-6803a489fd45",
+		"id": "5700b7d1-78b8-476f-b3f2-6475802cbf22",
+		"name": "box-worker",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/projects/5700b7d1-78b8-476f-b3f2-6475802cbf22",
 		"state": "wellFormed",
-		"revision": 30,
+		"revision": 9,
 		"visibility": 0
 	}
 }
