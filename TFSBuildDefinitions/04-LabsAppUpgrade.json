@@ -68,37 +68,37 @@
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-06T00:00:00.000Z"
+		"date": "2018-08-07T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-08-06T00:00:00.000Z"
+		"intValue": 0,
+		"date": "2018-08-07T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-06T00:00:00.000Z"
+		"date": "2018-08-07T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 1,
-		"date": "2018-08-06T00:00:00.000Z"
+		"intValue": 4,
+		"date": "2018-08-07T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 2,
-		"date": "2018-08-06T00:00:00.000Z"
+		"intValue": 4,
+		"date": "2018-08-07T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/3?revision=9"
+			"href": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=3"
 		},
 		"web": {
-			"href": "http://box-tfs:8080/tfs/_permalink/_build/index?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=3"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/index?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
 		},
 		"editor": {
-			"href": "http://box-tfs:8080/tfs/_permalink/_build/definitionEditor?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=3"
+			"href": "http://box-tfs:8080/tfs/_permalink/_build/definitionEditor?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -254,7 +254,7 @@
 				"inputs": {
 					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
 					"runOptions": "commands",
-					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy\ndocker-compose -f ~/labs-deploy/docker-compose.yml -f ~/labs-deploy/docker-compose-override.yml -p labs up -d",
+					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy && docker-compose -f docker-compose.yml -f docker-compose-override.yml -p labs up -d",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -287,7 +287,7 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "b81cd44f-cbcf-442e-b6bd-359e94e011bc",
+		"id": "75407da3-ba0f-4222-b054-b33e1c036396",
 		"type": "TfsGit",
 		"name": "labs-templates",
 		"url": "http://box-tfs:8080/tfs/DefaultCollection/box-worker/_git/labs-templates",
@@ -298,16 +298,16 @@
 	"processParameters": {},
 	"quality": 1,
 	"authoredBy": {
-		"displayName": "Administrator",
-		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/Identities/310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
+		"displayName": "lab-service",
+		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/Identities/062308b2-5d07-445f-8eb8-54462137c9f1",
 		"_links": {
 			"avatar": {
-				"href": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
+				"href": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=062308b2-5d07-445f-8eb8-54462137c9f1"
 			}
 		},
-		"id": "310c3e4a-e40c-461d-a717-7f7c47fe0bf8",
-		"uniqueName": "BOX-TFS\\Administrator",
-		"imageUrl": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=310c3e4a-e40c-461d-a717-7f7c47fe0bf8"
+		"id": "062308b2-5d07-445f-8eb8-54462137c9f1",
+		"uniqueName": "BOX-TFS\\lab-service",
+		"imageUrl": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=062308b2-5d07-445f-8eb8-54462137c9f1"
 	},
 	"drafts": [],
 	"queue": {
@@ -324,15 +324,15 @@
 			"name": "Default"
 		}
 	},
-	"id": 3,
+	"id": 4,
 	"name": "labs-app-upgrade",
-	"url": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/3?revision=9",
-	"uri": "vstfs:///Build/Definition/3",
+	"url": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=3",
+	"uri": "vstfs:///Build/Definition/4",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 9,
-	"createdDate": "2018-08-06T12:05:51.960Z",
+	"revision": 3,
+	"createdDate": "2018-08-07T06:09:16.927Z",
 	"project": {
 		"id": "5700b7d1-78b8-476f-b3f2-6475802cbf22",
 		"name": "box-worker",
