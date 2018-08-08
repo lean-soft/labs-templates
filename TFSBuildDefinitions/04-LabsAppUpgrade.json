@@ -27,6 +27,9 @@
 		"DATABASE_NAME": {
 			"value": ""
 		},
+		"DATABASE_NAME_IDENTITY": {
+			"value": ""
+		},
 		"DATABASE_PASSWORD": {
 			"value": null,
 			"isSecret": true
@@ -34,8 +37,11 @@
 		"DATABASE_SERVER": {
 			"value": ""
 		},
-		"DATABASE_USERNAME": {
+		"DATABASE_SERVER_IDENTITY": {
 			"value": ""
+		},
+		"DATABASE_USERNAME": {
+			"value": "sa"
 		},
 		"FILE_SERVER": {
 			"value": ""
@@ -63,42 +69,42 @@
 	}, {
 		"name": "CurrentBuildsInProgress",
 		"scope": "refs/heads/master",
-		"intValue": 0
+		"intValue": 1
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-07T00:00:00.000Z"
+		"date": "2018-08-08T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 0,
-		"date": "2018-08-07T00:00:00.000Z"
+		"intValue": 4,
+		"date": "2018-08-08T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-07T00:00:00.000Z"
+		"date": "2018-08-08T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 4,
-		"date": "2018-08-07T00:00:00.000Z"
+		"intValue": 7,
+		"date": "2018-08-08T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 4,
-		"date": "2018-08-07T00:00:00.000Z"
+		"intValue": 11,
+		"date": "2018-08-08T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=3"
+			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/19?revision=11"
 		},
 		"web": {
-			"href": "http://box-tfs:8080/tfs/_permalink/_build/index?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=19"
 		},
 		"editor": {
-			"href": "http://box-tfs:8080/tfs/_permalink/_build/definitionEditor?collectionId=df0addb9-f102-428e-9788-c32a05fc6f0a&projectId=5700b7d1-78b8-476f-b3f2-6475802cbf22&definitionId=4"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=19"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -120,7 +126,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "sudo rm -rf ~/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O ~/LabsUpgrade.tar\nsudo tar xvf ~/LabsUpgrade.tar -C ~/\nchmod 777 ~/LabsUpgrade/SQLToolkit/SQLToolkit\n",
 					"scriptPath": "",
@@ -142,7 +148,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "docker-compose -f ~/labs-deploy/docker-compose.yml -f ~/labs-deploy/docker-compose-override.yml down",
 					"scriptPath": "",
@@ -164,7 +170,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "sudo cp ~/LabsUpgrade/labs-deploy/docker-compose.yml ~/labs-deploy/docker-compose.yml",
 					"scriptPath": "",
@@ -186,9 +192,31 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
+					"scriptPath": "",
+					"inline": "",
+					"args": "",
+					"failOnStdErr": "true"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "SQL BACKUP IDENTITY",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "91443475-df55-4874-944b-39253b558790",
+					"versionSpec": "0.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"runOptions": "commands",
+					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER_IDENTITY) -n $(DATABASE_NAME_IDENTITY) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/accounts-$(Build.BuildNumber).bak",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -208,9 +236,31 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path ~/LabsUpgrade/SQLScripts_Up",
+					"scriptPath": "",
+					"inline": "",
+					"args": "",
+					"failOnStdErr": "true"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "DATABASE UPGRADE IDENTITY",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "91443475-df55-4874-944b-39253b558790",
+					"versionSpec": "0.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"runOptions": "commands",
+					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER_IDENTITY) -n $(DATABASE_NAME_IDENTITY) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path ~/LabsUpgrade/Identity_SQLScripts_Up",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -230,7 +280,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "sudo cp  ~/LabsUpgrade/labs-deploy/init.sh ~/labs-deploy/init.sh\nsudo chmod 777 ~/labs-deploy/init.sh\n~/labs-deploy/init.sh\n",
 					"scriptPath": "",
@@ -252,7 +302,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "2dbdd183-60e0-4f73-a48e-a2b5e3bde53c",
+					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
 					"runOptions": "commands",
 					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy && docker-compose -f docker-compose.yml -f docker-compose-override.yml -p labs up -d",
 					"scriptPath": "",
@@ -287,10 +337,10 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "75407da3-ba0f-4222-b054-b33e1c036396",
+		"id": "6bd6eb11-33a7-40a3-b2de-ff8799dd4862",
 		"type": "TfsGit",
 		"name": "labs-templates",
-		"url": "http://box-tfs:8080/tfs/DefaultCollection/box-worker/_git/labs-templates",
+		"url": "https://tfs.devopshub.cn/CloudEdge/labs-uat/_git/labs-templates",
 		"defaultBranch": "refs/heads/master",
 		"clean": "false",
 		"checkoutSubmodules": false
@@ -298,47 +348,47 @@
 	"processParameters": {},
 	"quality": 1,
 	"authoredBy": {
-		"displayName": "lab-service",
-		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/Identities/062308b2-5d07-445f-8eb8-54462137c9f1",
+		"displayName": "周文洋(Jacky Zhou)",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/ffb8b435-3a09-463a-aed9-37c4d046c406",
 		"_links": {
 			"avatar": {
-				"href": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=062308b2-5d07-445f-8eb8-54462137c9f1"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 			}
 		},
-		"id": "062308b2-5d07-445f-8eb8-54462137c9f1",
-		"uniqueName": "BOX-TFS\\lab-service",
-		"imageUrl": "http://box-tfs:8080/tfs/DefaultCollection/_api/_common/identityImage?id=062308b2-5d07-445f-8eb8-54462137c9f1"
+		"id": "ffb8b435-3a09-463a-aed9-37c4d046c406",
+		"uniqueName": "LEANSOFT\\jackyzhou",
+		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 	},
 	"drafts": [],
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9"
 			}
 		},
-		"id": 1,
-		"name": "Default",
-		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/build/Queues/1",
+		"id": 9,
+		"name": "LSEN-MPN150-7-win-agt",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9",
 		"pool": {
-			"id": 1,
-			"name": "Default"
+			"id": 18,
+			"name": "LSEN-MPN150-7-win-agt"
 		}
 	},
-	"id": 4,
+	"id": 19,
 	"name": "labs-app-upgrade",
-	"url": "http://192.168.66.101:8080/tfs/DefaultCollection/5700b7d1-78b8-476f-b3f2-6475802cbf22/_apis/build/Definitions/4?revision=3",
-	"uri": "vstfs:///Build/Definition/4",
+	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/19?revision=11",
+	"uri": "vstfs:///Build/Definition/19",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 3,
-	"createdDate": "2018-08-07T06:09:16.927Z",
+	"revision": 11,
+	"createdDate": "2018-08-08T13:42:25.227Z",
 	"project": {
-		"id": "5700b7d1-78b8-476f-b3f2-6475802cbf22",
-		"name": "box-worker",
-		"url": "http://192.168.66.101:8080/tfs/DefaultCollection/_apis/projects/5700b7d1-78b8-476f-b3f2-6475802cbf22",
+		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
+		"name": "labs-uat",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/fcb03491-0ecf-419d-aa04-6803a489fd45",
 		"state": "wellFormed",
-		"revision": 9,
+		"revision": 30,
 		"visibility": 0
 	}
 }
