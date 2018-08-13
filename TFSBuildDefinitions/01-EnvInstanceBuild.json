@@ -20,16 +20,19 @@
 		}
 	}],
 	"variables": {
-		"azureAccountName": {
-			"value": ""
-		},
-		"azurePassword": {
-			"value": ""
-		},
 		"azureResourceLocation": {
 			"value": ""
 		},
 		"azureSubscriptionId": {
+			"value": ""
+		},
+		"destApplicationId": {
+			"value": ""
+		},
+		"destApplicationKey": {
+			"value": ""
+		},
+		"destTenantId": {
 			"value": ""
 		},
 		"envFolder": {
@@ -79,89 +82,40 @@
 		"scope": "refs/heads/master",
 		"intValue": 0
 	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/dev",
-		"intValue": 1
-	}, {
 		"name": "CanceledBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 1,
-		"date": "2018-07-24T00:00:00.000Z"
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 2,
-		"date": "2018-07-24T00:00:00.000Z"
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/dev",
+		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-24T00:00:00.000Z"
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/dev",
+		"scope": "refs/heads/master",
 		"intValue": 2,
-		"date": "2018-07-24T00:00:00.000Z"
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 5,
-		"date": "2018-07-24T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 1,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 1,
-		"date": "2018-07-23T00:00:00.000Z"
+		"scope": "refs/heads/master",
+		"intValue": 3,
+		"date": "2018-08-13T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=43"
+			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/15?revision=5"
 		},
 		"web": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=79"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=15"
 		},
 		"editor": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=79"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=15"
 		}
 	},
 	"buildNumberFormat": "$(envFolder)-u$(labsUserId)-g$(groupId)-b$(BuildID)",
@@ -254,7 +208,7 @@
 				"inputs": {
 					"scriptType": "filePath",
 					"scriptName": "Labs-Deploy-AzureResourceGroup.ps1",
-					"arguments": "-azureAccountName \"$(azureAccountName)\" -azurePasswordString \"$(azurePassword)\"  -subscriptionID \"$(azureSubscriptionId)\" -buildId $(Build.BuildId)  -ResourceGroupLocation '$(azureResourceLocation)' -ArtifactStagingDirectory $(envFolder)  -UploadArtifacts -StorageAccountName “$(StorageAccountName)” -ResourceGroupName $(envInstanceName)-$(envFolder)-u$(labsUserId) -EnvironmentName \"$(azureEnvironmentName)\" -groupId '$(groupId)' -azureUserName labs-test-u$(labsUserId) -createAzureUser $false ",
+					"arguments": "-destTenantId \"$(destTenantId)\"  -destApplicationId \"$(destApplicationId)\" -destApplicationKey “$(destApplicationKey)” -subscriptionID \"$(azureSubscriptionId)\" -buildId $(Build.BuildId)  -ResourceGroupLocation '$(azureResourceLocation)' -ArtifactStagingDirectory $(envFolder)  -UploadArtifacts -StorageAccountName “$(StorageAccountName)” -ResourceGroupName $(envInstanceName)-$(envFolder)-u$(labsUserId) -EnvironmentName \"$(azureEnvironmentName)\" -groupId '$(groupId)' -azureUserName labs-test-u$(labsUserId) -createAzureUser $false ",
 					"workingFolder": "",
 					"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
 					"failOnStandardError": "true"
@@ -321,7 +275,7 @@
 	},
 	"repository": {
 		"properties": {
-			"cleanOptions": "2",
+			"cleanOptions": "0",
 			"labelSources": "0",
 			"labelSourcesFormat": "$(build.buildNumber)",
 			"reportBuildStatus": "true",
@@ -330,58 +284,58 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "c7b967d3-afbc-4038-8346-475afde9f52d",
+		"id": "6bd6eb11-33a7-40a3-b2de-ff8799dd4862",
 		"type": "TfsGit",
 		"name": "labs-templates",
-		"url": "https://tfs.devopshub.cn/leansoft/Labs/_git/labs-templates",
-		"defaultBranch": "refs/heads/dev",
-		"clean": "true",
+		"url": "https://tfs.devopshub.cn/CloudEdge/labs-uat/_git/labs-templates",
+		"defaultBranch": "refs/heads/master",
+		"clean": "false",
 		"checkoutSubmodules": false
 	},
 	"processParameters": {},
 	"quality": 1,
 	"authoredBy": {
 		"displayName": "周文洋(Jacky Zhou)",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/Identities/645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/ffb8b435-3a09-463a-aed9-37c4d046c406",
 		"_links": {
 			"avatar": {
-				"href": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 			}
 		},
-		"id": "645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"id": "ffb8b435-3a09-463a-aed9-37c4d046c406",
 		"uniqueName": "LEANSOFT\\jackyzhou",
-		"imageUrl": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 	},
 	"drafts": [],
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9"
 			}
 		},
-		"id": 155,
-		"name": "Default",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155",
+		"id": 9,
+		"name": "LSEN-MPN150-7-win-agt",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9",
 		"pool": {
 			"id": 18,
-			"name": "Default"
+			"name": "LSEN-MPN150-7-win-agt"
 		}
 	},
-	"id": 79,
+	"id": 15,
 	"name": "labs-templates-env-instance",
-	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/79?revision=43",
-	"uri": "vstfs:///Build/Definition/79",
+	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/15?revision=5",
+	"uri": "vstfs:///Build/Definition/15",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 43,
-	"createdDate": "2018-07-05T09:45:30.957Z",
+	"revision": 5,
+	"createdDate": "2018-08-13T08:23:41.317Z",
 	"project": {
-		"id": "580b5af0-a2f5-4585-8ed6-dddf6a84502d",
-		"name": "Labs",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/projects/580b5af0-a2f5-4585-8ed6-dddf6a84502d",
+		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
+		"name": "labs-uat",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/fcb03491-0ecf-419d-aa04-6803a489fd45",
 		"state": "wellFormed",
-		"revision": 381,
+		"revision": 30,
 		"visibility": 0
 	}
 }

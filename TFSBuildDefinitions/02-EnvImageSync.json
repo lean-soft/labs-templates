@@ -20,22 +20,25 @@
 		}
 	}],
 	"variables": {
+		"destApplicationId": {
+			"value": ""
+		},
+		"destApplicationKey": {
+			"value": ""
+		},
 		"destAzEnvLocation": {
 			"value": ""
 		},
 		"destAzEnvName": {
 			"value": ""
 		},
-		"destAzureAccountName": {
-			"value": ""
-		},
-		"destAzurePasswordString": {
-			"value": ""
-		},
 		"destResourceGroupName": {
 			"value": ""
 		},
 		"destSubscriptionId": {
+			"value": ""
+		},
+		"destTenantId": {
 			"value": ""
 		},
 		"envFolder": {
@@ -81,91 +84,42 @@
 	}, {
 		"name": "CurrentBuildsInProgress",
 		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/master",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInQueue",
-		"scope": "refs/heads/dev",
-		"intValue": 0
-	}, {
-		"name": "CurrentBuildsInProgress",
-		"scope": "refs/heads/dev",
-		"intValue": 0
+		"intValue": 1
 	}, {
 		"name": "CanceledBuilds",
-		"scope": "refs/heads/dev",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-08-13T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
 		"intValue": 2,
-		"date": "2018-07-24T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 13,
-		"date": "2018-07-24T00:00:00.000Z"
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/dev",
+		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-07-24T00:00:00.000Z"
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 4,
-		"date": "2018-07-24T00:00:00.000Z"
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-08-13T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 19,
-		"date": "2018-07-24T00:00:00.000Z"
-	}, {
-		"name": "CanceledBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "FailedBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 6,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "PartiallySuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 0,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "SuccessfulBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 4,
-		"date": "2018-07-23T00:00:00.000Z"
-	}, {
-		"name": "TotalBuilds",
-		"scope": "refs/heads/dev",
-		"intValue": 10,
-		"date": "2018-07-23T00:00:00.000Z"
+		"scope": "refs/heads/master",
+		"intValue": 2,
+		"date": "2018-08-13T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/94?revision=40"
+			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/16?revision=6"
 		},
 		"web": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=94"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=16"
 		},
 		"editor": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=94"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=16"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -189,7 +143,7 @@
 				"inputs": {
 					"scriptType": "filePath",
 					"scriptName": "Labs-Image-Copy.ps1",
-					"arguments": "-sourceSnapshotName  $(sourceSnapshotName) -sourceVhdUrl \"$(sourceVhdUrl)\" -destSubscriptionId $(destSubscriptionId) -destAzureAccountName $(destAzureAccountName) -destAzurePasswordString $(destAzurePasswordString) -destAzEnvName  $(destAzEnvName) -destAzEnvLocation $(destAzEnvLocation)  -destResourceGroupName $(destResourceGroupName) -storageAccountContainer $(storageAccountContainer) -vmName \"$(vmName)\"",
+					"arguments": "-sourceSnapshotName  $(sourceSnapshotName) -sourceVhdUrl \"$(sourceVhdUrl)\" -destSubscriptionId $(destSubscriptionId)  -destTenantId \"$(destTenantId)\"  -destApplicationId \"$(destApplicationId)\"  -destApplicationKey “$(destApplicationKey)” -destAzEnvName  $(destAzEnvName) -destAzEnvLocation $(destAzEnvLocation)  -destResourceGroupName $(destResourceGroupName) -storageAccountContainer $(storageAccountContainer) -vmName \"$(vmName)\"",
 					"workingFolder": "",
 					"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
 					"failOnStandardError": "true"
@@ -334,11 +288,11 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "c7b967d3-afbc-4038-8346-475afde9f52d",
+		"id": "6bd6eb11-33a7-40a3-b2de-ff8799dd4862",
 		"type": "TfsGit",
 		"name": "labs-templates",
-		"url": "https://tfs.devopshub.cn/leansoft/Labs/_git/labs-templates",
-		"defaultBranch": "refs/heads/dev",
+		"url": "https://tfs.devopshub.cn/CloudEdge/labs-uat/_git/labs-templates",
+		"defaultBranch": "refs/heads/master",
 		"clean": "false",
 		"checkoutSubmodules": false
 	},
@@ -346,46 +300,46 @@
 	"quality": 1,
 	"authoredBy": {
 		"displayName": "周文洋(Jacky Zhou)",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/Identities/645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/ffb8b435-3a09-463a-aed9-37c4d046c406",
 		"_links": {
 			"avatar": {
-				"href": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 			}
 		},
-		"id": "645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"id": "ffb8b435-3a09-463a-aed9-37c4d046c406",
 		"uniqueName": "LEANSOFT\\jackyzhou",
-		"imageUrl": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=ffb8b435-3a09-463a-aed9-37c4d046c406"
 	},
 	"drafts": [],
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9"
 			}
 		},
-		"id": 155,
-		"name": "Default",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155",
+		"id": 9,
+		"name": "LSEN-MPN150-7-win-agt",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9",
 		"pool": {
 			"id": 18,
-			"name": "Default"
+			"name": "LSEN-MPN150-7-win-agt"
 		}
 	},
-	"id": 94,
+	"id": 16,
 	"name": "labs-templates-image-sync",
-	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/94?revision=40",
-	"uri": "vstfs:///Build/Definition/94",
+	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/16?revision=6",
+	"uri": "vstfs:///Build/Definition/16",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 40,
-	"createdDate": "2018-07-06T03:41:42.370Z",
+	"revision": 6,
+	"createdDate": "2018-08-13T08:24:05.110Z",
 	"project": {
-		"id": "580b5af0-a2f5-4585-8ed6-dddf6a84502d",
-		"name": "Labs",
-		"url": "https://tfs.devopshub.cn/leansoft/_apis/projects/580b5af0-a2f5-4585-8ed6-dddf6a84502d",
+		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
+		"name": "labs-uat",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/fcb03491-0ecf-419d-aa04-6803a489fd45",
 		"state": "wellFormed",
-		"revision": 381,
+		"revision": 30,
 		"visibility": 0
 	}
 }
