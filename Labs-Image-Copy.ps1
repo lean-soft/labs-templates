@@ -54,7 +54,7 @@ $destVhdName = $sourceSnapshotName + (Get-Date -Format fff) + ".vhd"
 # login dest Subscription
 $newsec = ConvertTo-SecureString -String $destApplicationKey -AsPlainText -Force
 $cred = New-Object -TypeName System.Management.Automation.PSCredential($destApplicationId, $newsec)
-Login-AzureRmAccount -Credential $cred -TenantId $destTenantId -ServicePrincipal $destAzEnvName #AzureChinaCloud
+Login-AzureRmAccount -Credential $cred -TenantId $destTenantId -ServicePrincipal -EnvironmentName $destAzEnvName #AzureChinaCloud
 "Successfully login to dest Subscription: $destSubscriptionId"
 
 if($destSubscriptionId -ne $null){
