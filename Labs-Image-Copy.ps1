@@ -3,8 +3,9 @@ Param(
     [string] [Parameter(Mandatory=$true)] $sourceSnapshotName,
     [string] [Parameter(Mandatory=$false)] $sourceVhdUrl,# $sourceSnapshotName or $sourceVhdUrl must pass one ls112-tfs-server-2018-tfs2018-windows-snapshot-20180423.2        
     [string] [Parameter(Mandatory=$true)] $destSubscriptionId, #"9b26957f-5a38-47aa-a0fa-cd97f1dfdb12", #Windows Azure 企业
-    [string] [Parameter(Mandatory=$true)] $destAzureAccountName,
-    [string] [Parameter(Mandatory=$true)] $destAzurePasswordString,
+    [string] [Parameter(Mandatory=$true)] $destTenantId,
+    [string] [Parameter(Mandatory=$true)] $destApplicationId,
+    [string] [Parameter(Mandatory=$true)] $destApplicationKey,
 
     [string] [Parameter(Mandatory=$false)] $destAzEnvName = "AzureChinaCloud", # global(AzureCloud) or china(AzureChinaCloud)  Get-AzureRmEnvironment | Select-Object Name
     [string] [Parameter(Mandatory=$false)] $destVhdName = "vhd",# =sourceSnapshotName TODO : REMOVE
@@ -24,7 +25,6 @@ Param(
 "sourceSnapshotName      is: $sourceSnapshotName"
 "sourceVhdUrl            is: $sourceVhdUrl"
 "destSubscriptionId      is: $destSubscriptionId"
-"destAzurePasswordString is: *******************"
 "destAzEnvName           is: $destAzEnvName"
 "destVhdName             is: $destVhdName"
 "destAzEnvLocation       is: $destAzEnvLocation"
@@ -52,9 +52,9 @@ $destVhdName = $sourceSnapshotName + (Get-Date -Format fff) + ".vhd"
 "## Run Section 01. ## Login dest Subscription: $destSubscriptionId ##########"
 
 # login dest Subscription
-$azurePassword = ConvertTo-SecureString $destAzurePasswordString -AsPlainText -Force
-$psCred = New-Object System.Management.Automation.PSCredential($destAzureAccountName, $azurePassword)
-Login-AzureRmAccount -Credential $psCred -EnvironmentName $destAzEnvName #AzureChinaCloud
+$newsec = ConvertTo-SecureString -String $destApplicationKey -AsPlainText -Force
+$cred = New-Object -TypeName System.Management.Automation.PSCredential($destApplicationId, $newsec)
+Login-AzureRmAccount -Credential $cred -TenantId $destTenantId -ServicePrincipal $destAzEnvName #AzureChinaCloud
 "Successfully login to dest Subscription: $destSubscriptionId"
 
 if($destSubscriptionId -ne $null){

@@ -1,6 +1,7 @@
 Param(
-    [string]$azureAccountName,
-    [string]$azurePasswordString,
+    [string] [Parameter(Mandatory=$true)] $destTenantId,
+    [string] [Parameter(Mandatory=$true)] $destApplicationId,
+    [string] [Parameter(Mandatory=$true)] $destApplicationKey,
     [string]$subscriptionID,
     [int]$buildId,
     [string] [Parameter(Mandatory=$true)] $ArtifactStagingDirectory,
@@ -35,14 +36,17 @@ else
 
 $GithubPath=$ArtifactStagingDirectory
 
-$azurePassword = ConvertTo-SecureString $azurePasswordString -AsPlainText -Force
-$psCred = New-Object System.Management.Automation.PSCredential($azureAccountName, $azurePassword)
+$newsec = ConvertTo-SecureString -String $destApplicationKey -AsPlainText -Force
+$cred = New-Object -TypeName System.Management.Automation.PSCredential($destApplicationId, $newsec)
+
 
 if ($EnvironmentName -eq 'AzureChinaCloud') {
-    Login-AzureRmAccount -EnvironmentName AzureChinaCloud -Credential $psCred
+    Login-AzureRmAccount -Credential $cred -TenantId $destTenantId -ServicePrincipal -EnvironmentName AzureChinaCloud
+"Successfully login to dest Subscription: $destSubscriptionId"
+
 }
 else{
-    Login-AzureRmAccount -Credential $psCred
+     Login-AzureRmAccount -Credential $cred -TenantId $destTenantId -ServicePrincipal
 }
 
 Set-AzureRmContext -SubscriptionID $subscriptionID
