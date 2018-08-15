@@ -7,7 +7,7 @@
 			"hostname": "#hostname",
 			"username": "#adminUsername",
 			"password": "#adminPassword",
-			"protocol":"ssh",
+			"protocol":"rdp",
 			"port": 3389,
 			"properties": [{
 					"key": "displayname",
