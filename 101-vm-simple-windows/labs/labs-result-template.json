@@ -1,21 +1,50 @@
 {
-     "enviroments": [
-
-        {
-            "displayname": "windows",
-            "protocol": "rdp",
-            "hostname": "#hostname",
-            "username": "#adminUsername",
-            "password": "#adminPassword",
-            "privatekey":"",
-            "port": 3389,
-            "master":true,
-            "external": true
-        }
-     ],
-     "Info": {
-		"Subscription":{
-			"Id":"#subscriptionId"
+	"Services": [{
+			"uniqueName": "windows",
+			"displayname": "windows",
+			"master": true,
+			"external": true,
+			"hostname": "#hostname",
+			"username": "#adminUsername",
+			"password": "#adminPassword",
+			"protocol":"ssh",
+			"port": 3389,
+			"properties": [{
+					"key": "displayname",
+					"value": "windows",
+					"type": "text"
+				},
+				{
+					"key": "protocol",
+					"value": "ssh",
+					"type": "text"
+				},
+				{
+					"key": "hostname",
+					"value": "#hostname",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "#adminUsername",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "#adminPassword",
+					"type": "text"
+				},
+				{
+					"key": "port",
+					"value": "3389",
+					"type": "text"
+				}
+			]
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
 		},
 		"ResourceGroup": {
 			"Name": "#resourceGroupName",
