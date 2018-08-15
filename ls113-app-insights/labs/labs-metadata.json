@@ -1,8 +1,15 @@
 {
-  "itemDisplayName": "Application Insights",
-  "icon": "ubuntu",
-  "description": "获取丰富的性能监视、功能强大的警报和易于使用的仪表板，帮助确保应用程序可用且行为符合预期。快速识别是否出现问题以及受影响的用户数，进行根因分析以便查找并解决问题。",
-  "summary": "获取丰富的性能监视、功能强大的警报和易于使用的仪表板，帮助确保应用程序可用且行为符合预期。快速识别是否出现问题以及受影响的用户数，进行根因分析以便查找并解决问题。",
-  "githubUsername": "azure-devops",
-  "dateUpdated": "2017-06-21"
+	"name": "Application Insights",
+	"overview": "获取丰富的性能监视、功能强大的警报和易于使用的仪表板，帮助确保应用程序可用且行为符合预期。快速识别是否出现问题以及受影响的用户数，进行根因分析以便查找并解决问题。",
+	"tFSBuildID": 0,
+	"githubPath": "ls113-app-insights",
+	"isPublic": false,
+	"azureEnvironmentName": "Global",
+	"serviceType": "APPInsights",
+	"consumptionPerDay": 0.0,
+	"description": "",
+	"previewImage": "",
+	"backgroundImage": "",
+	"services": null,
+	"imageRefInfo": []
 }
