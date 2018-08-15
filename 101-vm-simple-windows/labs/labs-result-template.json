@@ -16,7 +16,7 @@
 				},
 				{
 					"key": "protocol",
-					"value": "ssh",
+					"value": "rdp",
 					"type": "text"
 				},
 				{
