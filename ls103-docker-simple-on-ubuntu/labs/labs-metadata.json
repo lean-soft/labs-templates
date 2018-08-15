@@ -1,15 +1,15 @@
 {
-    "Name": "Docker on Ubuntu 16.04 LTS",
-    "Overview": "预装Docker 17.04版本的Ubuntu Linux服务器，立即可以运行容器应用。",
-    "TFSBuildID": 0,
-    "GithubPath": "ls103-docker-simple-on-ubuntu",
-    "IsPublic": true,
-    "AzureEnvironmentName": "Global",
-    "ServiceType": "VirtualMachines",
-    "ConsumptionPerDay": 0.0,
-    "Description": "<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的<a href=\"https://baike.baidu.com/item/Linux\" target=\"_blank\">Linux</a>机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>\r\n",
-    "PreviewImage": "be92a20d-c69b-4b2f-8caf-a120a3d7365f",
-    "BackgroundImage": "6e9c762b-58be-46b7-a62b-1506c02ad1d4",
-    "Services": null,
-    "ImageSyncInfo": null
+    "name": "Docker on Ubuntu 16.04 LTS",
+    "overview": "预装Docker 17.04版本的Ubuntu Linux服务器，立即可以运行容器应用。",
+    "tFSBuildID": 0,
+    "githubPath": "ls103-docker-simple-on-ubuntu",
+    "isPublic": true,
+    "azureEnvironmentName": "Global",
+    "serviceType": "VirtualMachines",
+    "consumptionPerDay": 0.0,
+    "description": "<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的<a href=\"https://baike.baidu.com/item/Linux\" target=\"_blank\">Linux</a>机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>\r\n",
+    "services": null,
+    "imageRefInfo": []
   }
+
+
