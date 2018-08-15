@@ -1,8 +1,15 @@
 {
-  "itemDisplayName": "Docker Swarm集群环境",
-  "icon": "ubuntu",
-  "description": "Docker Swarm集群环境，提供1个Master节点，2个Node节点",
-  "summary": "Docker Swarm集群环境，提供1个Master节点，2个Node节点",
-  "githubUsername": "zhouwenyang",
-  "dateUpdated": "2018-01-07"
+	"name": "Docker Swarm集群环境",
+	"overview": "Docker Swarm集群环境，提供1个Master节点，2个Node节点",
+	"tFSBuildID": 0,
+	"githubPath": "ls109-docker-swarm",
+	"isPublic": true,
+	"azureEnvironmentName": "China",
+	"serviceType": "VirtualMachines",
+	"consumptionPerDay": 0.0,
+	"description": "",
+	"previewImage": "",
+	"backgroundImage": "",
+	"services": null,
+	"imageRefInfo": []
 }
