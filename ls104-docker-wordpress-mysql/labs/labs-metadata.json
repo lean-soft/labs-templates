@@ -1,15 +1,13 @@
 {
-    "Name": "Wordpress 博客",
-    "Overview": "使用Docker运行的Wordpress + MySQL 环境",
-    "TFSBuildID": 0,
-    "GithubPath": "ls104-docker-wordpress-mysql",
-    "IsPublic": true,
-    "AzureEnvironmentName": "Global",
-    "ServiceType": "VirtualMachines",
-    "ConsumptionPerDay": 0.0,
-    "Description": "<p>WordPress是使用<a href=\"https://baike.baidu.com/item/PHP/9337\" target=\"_blank\">PHP</a>语言开发的<a href=\"https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2\" target=\"_blank\">博客</a>平台，用户可以在支持PHP和MySQL数据库的<a href=\"https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8/100571\" target=\"_blank\">服务器</a>上架设属于自己的网站。也可以把 WordPress当作一个<a href=\"https://baike.baidu.com/item/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/2683135\" target=\"_blank\">内容管理系统</a>（<a href=\"https://baike.baidu.com/item/CMS/315935\" target=\"_blank\">CMS</a>）来使用。</p>\r\n\r\n<p>WordPress是一款个人<a href=\"https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F\" target=\"_blank\">博客系统</a>，并逐步演化成一款内容<a href=\"https://baike.baidu.com/item/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\" target=\"_blank\">管理系统</a>软件，它是使用PHP语言和<a href=\"https://baike.baidu.com/item/MySQL/471251\" target=\"_blank\">MySQL</a>数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>\r\n\r\n<p>WordPress有许多第三方开发的免费模板，安装方式简单易用。不过要做一个自己的模板，则需要你有一定的专业知识。比如你至少要懂的<a href=\"https://baike.baidu.com/item/%E6%A0%87%E5%87%86%E9%80%9A%E7%94%A8%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/6805073\" target=\"_blank\">标准通用标记语言</a>下的一个应用<a href=\"https://baike.baidu.com/item/HTML\" target=\"_blank\">HTML</a><a href=\"https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81\" target=\"_blank\">代码</a>、<a href=\"https://baike.baidu.com/item/CSS/5457\" target=\"_blank\">CSS</a>、<a href=\"https://baike.baidu.com/item/PHP/9337\" target=\"_blank\">PHP</a>等相关知识。</p>\r\n\r\n<p>WordPress官方支持中文版，同时有爱好者开发的第三方中文<a href=\"https://baike.baidu.com/item/%E8%AF%AD%E8%A8%80%E5%8C%85/1985988\" target=\"_blank\">语言包</a>，如wopus中文语言包。WordPress拥有成千上万个各式插件和不计其数的主题模板样式。&nbsp;</p>\r\n",
-    "PreviewImage": "4a6db30a-24e0-4738-b795-28a035894903",
-    "BackgroundImage": "47df7bde-bcad-46db-80cf-f68564d4eddb",
-    "Services": null,
-    "ImageSyncInfo": null
+    "name": "Wordpress 博客",
+    "overview": "使用Docker运行的Wordpress + MySQL 环境",
+    "tFSBuildID": 0,
+    "githubPath": "ls104-docker-wordpress-mysql",
+    "isPublic": true,
+    "azureEnvironmentName": "Global",
+    "serviceType": "VirtualMachines",
+    "consumptionPerDay": 0.0,
+    "description": "<p>WordPress是使用<a href=\"https://baike.baidu.com/item/PHP/9337\" target=\"_blank\">PHP</a>语言开发的<a href=\"https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2\" target=\"_blank\">博客</a>平台，用户可以在支持PHP和MySQL数据库的<a href=\"https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8/100571\" target=\"_blank\">服务器</a>上架设属于自己的网站。也可以把 WordPress当作一个<a href=\"https://baike.baidu.com/item/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/2683135\" target=\"_blank\">内容管理系统</a>（<a href=\"https://baike.baidu.com/item/CMS/315935\" target=\"_blank\">CMS</a>）来使用。</p>\r\n\r\n<p>WordPress是一款个人<a href=\"https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F\" target=\"_blank\">博客系统</a>，并逐步演化成一款内容<a href=\"https://baike.baidu.com/item/%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F\" target=\"_blank\">管理系统</a>软件，它是使用PHP语言和<a href=\"https://baike.baidu.com/item/MySQL/471251\" target=\"_blank\">MySQL</a>数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。</p>\r\n\r\n<p>WordPress有许多第三方开发的免费模板，安装方式简单易用。不过要做一个自己的模板，则需要你有一定的专业知识。比如你至少要懂的<a href=\"https://baike.baidu.com/item/%E6%A0%87%E5%87%86%E9%80%9A%E7%94%A8%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/6805073\" target=\"_blank\">标准通用标记语言</a>下的一个应用<a href=\"https://baike.baidu.com/item/HTML\" target=\"_blank\">HTML</a><a href=\"https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81\" target=\"_blank\">代码</a>、<a href=\"https://baike.baidu.com/item/CSS/5457\" target=\"_blank\">CSS</a>、<a href=\"https://baike.baidu.com/item/PHP/9337\" target=\"_blank\">PHP</a>等相关知识。</p>\r\n\r\n<p>WordPress官方支持中文版，同时有爱好者开发的第三方中文<a href=\"https://baike.baidu.com/item/%E8%AF%AD%E8%A8%80%E5%8C%85/1985988\" target=\"_blank\">语言包</a>，如wopus中文语言包。WordPress拥有成千上万个各式插件和不计其数的主题模板样式。&nbsp;</p>\r\n",
+    "services": null,
+    "imageRefInfo": []
   }
