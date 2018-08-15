@@ -8,8 +8,6 @@
 	"serviceType": "VirtualMachines",
 	"consumptionPerDay": 0.0,
 	"description": "",
-	"previewImage": "",
-	"backgroundImage": "",
 	"services": null,
 	"imageRefInfo": []
 }
