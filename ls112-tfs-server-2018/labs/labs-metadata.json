@@ -12,12 +12,12 @@
 	"imageRefInfo": [{
 			"vmName": "tfs2018|imageId01",
 			"snapshotName": "ls0112x01-tfs-server-2018-tfs2018-windows-snapshot-20180423.2",
-			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/s3qr1zvlwgds/abcd?sv=2017-04-17&sr=b&si=ade17f91-a593-43cc-a6e6-11fc7908b962&sig=y%2FbVW5Pj%2BkoAL5TKRjSGsARRskcUMMzonJ8H7AhtHB4%3D"
+			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/s3qr1zvlwgds/abcd?sv=2017-04-17&sr=b&si=3f0e15e5-a394-4f9c-8a0a-f105bb0ad90d&sig=oQ4KXfu8HlmFPO6afNmzmSIzC9Epqe5hPL9GnGHLciM%3D"
 		},
 		{
 			"vmName": "linux|imageId02",
 			"snapshotName": "ls0112x02-tfs-server-2018-linuxagent-linux-snapshot-20180423.1",
-			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/wfgwsn5bmpg1/abcd?sv=2017-04-17&sr=b&si=cd704613-9897-42d3-a00e-d40410689802&sig=GALc%2B9T6kkVw6afSW3CQPMK1CNh%2Bt36LWpOcF030%2Fd0%3D"
+			"snapshotUrl": "https://md-cqc4brkzml32.blob.core.chinacloudapi.cn/wfgwsn5bmpg1/abcd?sv=2017-04-17&sr=b&si=2b15eb53-627d-4207-8c17-ce0b834954b0&sig=9DuRRmlItG8kid8egl70DMaqKipeYwDzn6%2FAd%2FRsel0%3D"
 		}
 	]
 }
