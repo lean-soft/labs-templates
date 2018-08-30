@@ -1,7 +1,7 @@
 {
     "name": "ASP.NET Core 流水线",
     "overview": "自动完成Asp.net core应用的代码库，CI/CD和Azure App Service环境搭建",
-    "tFSBuildID": 75,
+    "tFSBuildID": 0,
     "githubPath": "lsproj101-yoteam-asp",
     "isPublic": true,
     "azureEnvironmentName": "China",
