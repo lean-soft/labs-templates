@@ -7,7 +7,7 @@
     "azureEnvironmentName": "China",
     "serviceType": "VirtualMachines",
     "consumptionPerDay": 0.0,
-    "description": "",
+    "description": "提供一台Windows Server 2016服务器",
     "services": null,
     "imageRefInfo": []
 
