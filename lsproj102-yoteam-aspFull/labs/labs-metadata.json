@@ -1,5 +1,5 @@
 {
-    "name": "ASP.NET 流水线",
+    "name": "ASP.NET MVC流水线",
     "overview": "自动完成Asp.Net Web 应用的代码库，CI/CD和Azure App Service环境搭建",
     "tFSBuildID": 0,
     "githubPath": "lsproj102-yoteam-aspFull",
