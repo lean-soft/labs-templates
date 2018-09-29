@@ -1,15 +1,15 @@
 {
-    "Name": "Nodejs 流水线",
-    "Overview": "自动完成 Nodejs 应用的代码库，CI/CD和Azure App Service环境搭建",
-    "TFSBuildID": 75,
-    "GithubPath": "lsproj104-yoteam-node",
-    "IsPublic": true,
-    "AzureEnvironmentName": "China",
-    "ServiceType": "Project",
-    "ConsumptionPerDay": 0.0,
-    "Description": "<p>项目介绍</p>\r\n\r\n<p>本项目模板使用yoTeam在指定的Team Foundation Server 2018 中自动创建一套基于&nbsp;<a href=\"#\">Nodejs</a>&nbsp;&nbsp;Core 的示例程序和持续交付流水线。当推送代码到Git仓库后会触发CI、CD，示例程序最终会部署到Azure App Service 中。</p>\r\n\r\n<table>\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>内容</th>\r\n\t\t\t<th>说明</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>团队项目</td>\r\n\t\t\t<td>自动完成TFS团队项目的创建</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Git代码库</td>\r\n\t\t\t<td>使用标准的Nodejs代码脚手架，自动导入到以上TFS团队项目的Git库中。代码包含已经搭建好的MVC架构脚手架代码，立即可以运行。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>持续集成(CI)定义</td>\r\n\t\t\t<td>根据以上Git库中的代码，自动完成持续集成(CI)的定义导入，并立即触发构建第一个可部署版本。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>持续部署(CD)定义</td>\r\n\t\t\t<td>根据以上持续集成所生成的交付件，配置好持续部署定义。同时在Azure中自动完成Azure Web App Service的创建，并触发向此云服务的第一次部署。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>应用监控</td>\r\n\t\t\t<td>使用Azure Application Insight配置对以上App Service的监控配置，立即可以收集应用运行实时数据，并生成监控仪表盘。</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n",
-    "PreviewImage": "",
-    "BackgroundImage": "",
-    "Services": null,
-    "ImageSyncInfo": null
+    "name": "Nodejs 流水线",
+    "overview": "自动完成 Nodejs 应用的代码库，CI/CD和Azure App Service环境搭建",
+    "tFSBuildID": 75,
+    "githubPath": "lsproj104-yoteam-node",
+    "isPublic": true,
+    "azureEnvironmentName": "China",
+    "serviceType": "Project",
+    "consumptionPerDay": 0.0,
+    "description": "<p>项目介绍</p>\r\n\r\n<p>本项目模板使用yoTeam在指定的Team Foundation Server 2018 中自动创建一套基于&nbsp;<a href=\"#\">Nodejs</a>&nbsp;&nbsp;Core 的示例程序和持续交付流水线。当推送代码到Git仓库后会触发CI、CD，示例程序最终会部署到Azure App Service 中。</p>\r\n\r\n<table>\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>内容</th>\r\n\t\t\t<th>说明</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>团队项目</td>\r\n\t\t\t<td>自动完成TFS团队项目的创建</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Git代码库</td>\r\n\t\t\t<td>使用标准的Nodejs代码脚手架，自动导入到以上TFS团队项目的Git库中。代码包含已经搭建好的MVC架构脚手架代码，立即可以运行。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>持续集成(CI)定义</td>\r\n\t\t\t<td>根据以上Git库中的代码，自动完成持续集成(CI)的定义导入，并立即触发构建第一个可部署版本。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>持续部署(CD)定义</td>\r\n\t\t\t<td>根据以上持续集成所生成的交付件，配置好持续部署定义。同时在Azure中自动完成Azure Web App Service的创建，并触发向此云服务的第一次部署。</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>应用监控</td>\r\n\t\t\t<td>使用Azure Application Insight配置对以上App Service的监控配置，立即可以收集应用运行实时数据，并生成监控仪表盘。</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n",
+    "previewImage": "",
+    "backgroundImage": "",
+    "services": null,
+    "imageRefInfo": []
   }
