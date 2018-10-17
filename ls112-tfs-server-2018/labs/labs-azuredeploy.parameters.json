@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "chinanorth"
+            "value": "chinanorth2"
         },
         "virtualMachineName": {
             "value": "tfs2018"
         },
         "virtualMachineSize": {
-            "value": "Standard_D2"
+            "value": "standard_ds2_v2"
         },
         "adminUsername": {
             "value": "azureuser"
@@ -51,7 +51,7 @@
             "value": "linux"
         },
         "virtualMachineSizeLinux": {
-            "value": "Standard_D1"
+            "value": "standard_ds1_v2"
         },
         "adminUsernameLinux": {
             "value": "azureuser"
