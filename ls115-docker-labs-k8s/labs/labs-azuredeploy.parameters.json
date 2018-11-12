@@ -27,10 +27,10 @@
             "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3nHt2umDNqlmyGpOU2Gafw/SgIp88T3lNoyG7g0OdoPGHitB0kMH7jNbfQll8vKaR2vGTBE8EUT8ZOSHmAvObyCp4eZmNUuQm1oFHXQbE90vgOT1Y0q8e2/KgHS2rz8YsUs/pxBA2qE3VAWfVaUt0IBlX7q8vjakEFPXFgNayjKl88E41CaxfLakNTaCfXv909IOnb/6J63UocT6fBehzAn5+GURsLW81HQ6kqK32IZpCRVwmSHRV2xYwf5LmFve2pyumRTCorJqgN03t/0NqHlbfrNyCXDB9IxfldNUIGFi5VdqdKqFpjYy1e8LomX1zp42f7ApmdlELtq9kUn+1 wilson@DESKTOP-9TR4B53"
         },
         "servicePrincipalClientId": {
-            "value": "#{servicePrincipalId}#"
+            "value": "#{destApplicationId}#"
         },
         "servicePrincipalClientSecret": {
-            "value": "#{servicePrincipalKey}#"
+            "value": "#{destApplicationKey}#"
         }
     }
 }
