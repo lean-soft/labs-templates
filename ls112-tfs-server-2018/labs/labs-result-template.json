@@ -98,7 +98,7 @@
 				},
 				{
 					"key": "port",
-					"value": "3389",
+					"value": "22",
 					"type": "text"
 				}
 			],
