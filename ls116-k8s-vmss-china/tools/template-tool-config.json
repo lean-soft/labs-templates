@@ -1,6 +1,6 @@
 {
   "apiVersion": "vlabs",
-  "location": "chinaeast2",
+  "location": "chinanorth2",
   "properties": {
     "orchestratorProfile": {
       "orchestratorType": "Kubernetes",
@@ -34,7 +34,7 @@
     "linuxProfile": {
       "adminUsername": "azureuser",
       "adminPassword": "%{adminPassword}%",
-      "ssh": {          
+      "ssh": {
         "publicKeys": [
           {
             "keyData": "%{sshRSAPublicKey}%"
