@@ -1,0 +1,55 @@
+{
+	"Services": [
+		{
+			"uniqueName": "#masterVMName-0",
+			"displayname": "#masterVMName-0",
+			"external": true,
+			"hostname": "#masterFQDN",
+			"username": "#masterLinuxAdminUsername",
+			"password": "#masterLinuxAdminPassword",
+			"protocol":"ssh",
+			"port": 22,
+			"properties": [{
+					"key": "displayname",
+					"value": "#masterVMName-0",
+					"type": "text"
+				},
+				{
+					"key": "protocol",
+					"value": "ssh",
+					"type": "text"
+				},
+				{
+					"key": "hostname",
+					"value": "#masterFQDN",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "#masterLinuxAdminUsername",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "#masterLinuxAdminPassword",
+					"type": "text"
+				},
+				{
+					"key": "port",
+					"value": "22",
+					"type": "text"
+				}
+			],
+			"apps": []
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#rgName",
+			"Location": "#rgLocation"
+		}
+	}
+}
