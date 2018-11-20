@@ -21,30 +21,28 @@
 	}],
 	"variables": {
 		"ACR_PASSWORD": {
-			"value": null,
-			"isSecret": true
+			"value": ""
 		},
 		"DATABASE_NAME": {
-			"value": ""
+			"value": "devopslabs"
 		},
 		"DATABASE_NAME_IDENTITY": {
-			"value": ""
+			"value": "accounts"
 		},
 		"DATABASE_PASSWORD": {
-			"value": null,
-			"isSecret": true
+			"value": ""
 		},
 		"DATABASE_SERVER": {
-			"value": ""
+			"value": "devcloudx.com,1333"
 		},
 		"DATABASE_SERVER_IDENTITY": {
-			"value": ""
+			"value": "devcloudx.com,1233"
 		},
 		"DATABASE_USERNAME": {
 			"value": "sa"
 		},
 		"FILE_SERVER": {
-			"value": ""
+			"value": "http://api.devcloudx.com"
 		},
 		"system.debug": {
 			"value": "false",
@@ -69,42 +67,67 @@
 	}, {
 		"name": "CurrentBuildsInProgress",
 		"scope": "refs/heads/master",
-		"intValue": 1
+		"intValue": 0
 	}, {
 		"name": "CanceledBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-08T00:00:00.000Z"
+		"date": "2018-11-20T00:00:00.000Z"
 	}, {
 		"name": "FailedBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 4,
-		"date": "2018-08-08T00:00:00.000Z"
+		"intValue": 1,
+		"date": "2018-11-20T00:00:00.000Z"
 	}, {
 		"name": "PartiallySuccessfulBuilds",
 		"scope": "refs/heads/master",
 		"intValue": 0,
-		"date": "2018-08-08T00:00:00.000Z"
+		"date": "2018-11-20T00:00:00.000Z"
 	}, {
 		"name": "SuccessfulBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 7,
-		"date": "2018-08-08T00:00:00.000Z"
+		"intValue": 4,
+		"date": "2018-11-20T00:00:00.000Z"
 	}, {
 		"name": "TotalBuilds",
 		"scope": "refs/heads/master",
-		"intValue": 11,
-		"date": "2018-08-08T00:00:00.000Z"
+		"intValue": 5,
+		"date": "2018-11-20T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-11-16T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-11-16T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-11-16T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-11-16T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-11-16T00:00:00.000Z"
 	}],
 	"_links": {
 		"self": {
-			"href": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/19?revision=11"
+			"href": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/28?revision=7"
 		},
 		"web": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=19"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=28"
 		},
 		"editor": {
-			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=fcb03491-0ecf-419d-aa04-6803a489fd45&definitionId=19"
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=28"
 		}
 	},
 	"jobAuthorizationScope": 1,
@@ -126,7 +149,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "sudo rm -rf ~/LabsUpgrade/SQLScripts_Up\nwget $(FILE_SERVER)/labs-deploy/LabsUpgrade.tar -O ~/LabsUpgrade.tar\nsudo tar xvf ~/LabsUpgrade.tar -C ~/\nchmod 777 ~/LabsUpgrade/SQLToolkit/SQLToolkit\n",
 					"scriptPath": "",
@@ -148,7 +171,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "docker-compose -f ~/labs-deploy/docker-compose.yml -f ~/labs-deploy/docker-compose-override.yml down",
 					"scriptPath": "",
@@ -170,7 +193,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "sudo cp ~/LabsUpgrade/labs-deploy/docker-compose.yml ~/labs-deploy/docker-compose.yml",
 					"scriptPath": "",
@@ -192,7 +215,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/devopslabs-$(Build.BuildNumber).bak",
 					"scriptPath": "",
@@ -214,7 +237,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit Backup -s $(DATABASE_SERVER_IDENTITY) -n $(DATABASE_NAME_IDENTITY) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path /home/sqlbackup/accounts-$(Build.BuildNumber).bak",
 					"scriptPath": "",
@@ -236,7 +259,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER) -n $(DATABASE_NAME) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path ~/LabsUpgrade/SQLScripts_Up",
 					"scriptPath": "",
@@ -258,7 +281,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "~/LabsUpgrade/SQLToolkit/SQLToolkit RunScripts -s $(DATABASE_SERVER_IDENTITY) -n $(DATABASE_NAME_IDENTITY) -u $(DATABASE_USERNAME) -p $(DATABASE_PASSWORD) -path ~/LabsUpgrade/Identity_SQLScripts_Up",
 					"scriptPath": "",
@@ -280,7 +303,7 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
 					"commands": "sudo cp  ~/LabsUpgrade/labs-deploy/init.sh ~/labs-deploy/init.sh\nsudo chmod 777 ~/labs-deploy/init.sh\n~/labs-deploy/init.sh\n",
 					"scriptPath": "",
@@ -302,9 +325,9 @@
 					"definitionType": "task"
 				},
 				"inputs": {
-					"sshEndpoint": "24833bee-fe9f-4fd0-952d-4373482b8b15",
+					"sshEndpoint": "ae6fb18d-62e0-4290-9ec5-9e9383b26634",
 					"runOptions": "commands",
-					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy && docker-compose -f docker-compose.yml -f docker-compose-override.yml -p labs up -d",
+					"commands": "docker login devopslabs.azurecr.io -u devopslabs -p  $(ACR_PASSWORD) \ncd ~/labs-deploy && docker-compose -f docker-compose.yml -f docker-compose-override.yml -p labs up -d\ncd ~/labs-deploy &&docker-compose -f docker-compose.yml -f docker-compose-override.yml -p labs up -d --force-recreate nginx",
 					"scriptPath": "",
 					"inline": "",
 					"args": "",
@@ -337,10 +360,10 @@
 			"checkoutNestedSubmodules": "false",
 			"fetchDepth": "0"
 		},
-		"id": "6bd6eb11-33a7-40a3-b2de-ff8799dd4862",
+		"id": "b98ee32b-90e6-4e64-a821-e05dca1b6d94",
 		"type": "TfsGit",
 		"name": "labs-templates",
-		"url": "https://tfs.devopshub.cn/CloudEdge/labs-uat/_git/labs-templates",
+		"url": "https://tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates",
 		"defaultBranch": "refs/heads/master",
 		"clean": "false",
 		"checkoutSubmodules": false
@@ -363,32 +386,32 @@
 	"queue": {
 		"_links": {
 			"self": {
-				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9"
+				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5"
 			}
 		},
-		"id": 9,
+		"id": 5,
 		"name": "LSEN-MPN150-7-win-agt",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/9",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5",
 		"pool": {
 			"id": 18,
 			"name": "LSEN-MPN150-7-win-agt"
 		}
 	},
-	"id": 19,
+	"id": 28,
 	"name": "labs-app-upgrade",
-	"url": "https://tfs.devopshub.cn/CloudEdge/fcb03491-0ecf-419d-aa04-6803a489fd45/_apis/build/Definitions/19?revision=11",
-	"uri": "vstfs:///Build/Definition/19",
+	"url": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/28?revision=7",
+	"uri": "vstfs:///Build/Definition/28",
 	"path": "\\",
 	"type": 2,
 	"queueStatus": 0,
-	"revision": 11,
-	"createdDate": "2018-08-08T13:42:25.227Z",
+	"revision": 7,
+	"createdDate": "2018-11-20T12:46:37.130Z",
 	"project": {
-		"id": "fcb03491-0ecf-419d-aa04-6803a489fd45",
-		"name": "labs-uat",
-		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/fcb03491-0ecf-419d-aa04-6803a489fd45",
+		"id": "ee4c678f-88aa-4921-bca5-52957580be6c",
+		"name": "labs-prod",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/ee4c678f-88aa-4921-bca5-52957580be6c",
 		"state": "wellFormed",
-		"revision": 30,
+		"revision": 21,
 		"visibility": 0
 	}
 }
