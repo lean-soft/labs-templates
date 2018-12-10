@@ -39,7 +39,7 @@
       "name": "[variables('acrStorageName')]",
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2015-06-15",
-      "location": "[resourceGroup().location]",
+      "location": "chinanorth",
       "comments": "This storage account is used by Container Registry for storing its datas.",
       "dependsOn": [],
       "tags": {
@@ -54,7 +54,7 @@
       "name": "[parameters('acrName')]",
       "type": "Microsoft.ContainerRegistry/registries",
       "apiVersion": "2016-06-27-preview",
-      "location": "[resourceGroup().location]",
+      "location": "chinanorth",
       "comments": "Container registry for storing docker images",
       "dependsOn": [
         "[variables('acrStorageId')]"
