@@ -30,6 +30,9 @@
 		"type": "Microsoft.ContainerRegistry/registries",
 		"apiVersion": "2017-10-01",
 		"location": "chinanorth",
+		"sku": {
+			"name": "[parameters('registrySku')]"
+		},
 		"comments": "Container registry for storing docker images",
 		"tags": {
 			"displayName": "Container Registry",
@@ -50,10 +53,10 @@
 		},
 		"resourceGroupLocation": {
 			"type": "string",
-			"value": "chinanorth"
+			"value": "chinanorth2"
 		},
 		"registryServer": {
-			"value": "[reference(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2016-06-27-preview').loginServer]",
+			"value": "[reference(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2017-10-01').loginServer]",
 			"type": "string"
 		},
 		"registryUsername": {
@@ -61,7 +64,7 @@
 			"type": "string"
 		},
 		"registryPassword": {
-			"value": "[listCredentials(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2017-03-01').passwords[0].value]",
+			"value": "[listCredentials(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2017-10-01').passwords[0].value]",
 			"type": "string"
 		}
 	}
