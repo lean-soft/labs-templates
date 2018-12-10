@@ -25,6 +25,13 @@
         "Standard_ZRS",
         "Standard_GRS"
       ],
+      "registrySku": {
+            "type": "string",
+            "defaultValue": "Standard",
+            "metadata": {
+                "description": "The SKU of the container registry."
+            }
+      },
       "metadata": {
         "description": "Type of the storage account that will store container registry datas."
       }
@@ -38,8 +45,11 @@
     {
       "name": "[variables('acrStorageName')]",
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2017-10-01",
       "location": "chinanorth",
+       "sku": {
+                "name": "[parameters('registrySku')]"
+       },
       "comments": "This storage account is used by Container Registry for storing its datas.",
       "dependsOn": [],
       "tags": {
