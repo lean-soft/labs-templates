@@ -83,7 +83,7 @@
 		},
 		"resourceGroupLocation": {
 			"type": "string",
-			"value": "[resourceGroup().location]"
+			"value": "chinanorth"
 		},
     "registryServer": {
       "value": "[reference(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2016-06-27-preview').loginServer]",
