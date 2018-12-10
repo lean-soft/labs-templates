@@ -1,0 +1,34 @@
+{
+	"Services": [
+		{
+			"uniqueName":"ACR",
+			"displayname": "Azure Container Registry",
+			"properties":[
+				{
+					"key":"Server",
+					"value":"#registryServer",
+					"type":"text"
+				},
+				{
+					"key":"Username",
+					"value":"#registryUsername",
+					"type":"text"
+				},
+				{
+					"key":"PassWord",
+					"value":"#registryPassword",
+					"type":"text"
+				}
+			]
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}

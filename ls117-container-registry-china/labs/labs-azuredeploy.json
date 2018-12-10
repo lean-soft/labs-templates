@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"acrName": {
+			"type": "string",
+			"minLength": 5,
+			"maxLength": 50,
+			"metadata": {
+				"description": "Name of your Azure Container Registry"
+			}
+		},
+		"acrAdminUserEnabled": {
+			"type": "bool",
+			"defaultValue": false,
+			"metadata": {
+				"description": "Enable admin user that have push / pull permission to the registry."
+			}
+		},
+		"registrySku": {
+			"type": "string",
+			"defaultValue": "Basic",
+			"metadata": {
+				"description": "The SKU of the container registry."
+			}
+		}
+	},
+	"resources": [{
+		"name": "[parameters('acrName')]",
+		"type": "Microsoft.ContainerRegistry/registries",
+		"apiVersion": "2017-10-01",
+		"location": "chinanorth",
+		"sku": {
+			"name": "[parameters('registrySku')]"
+		},
+		"comments": "Container registry for storing docker images",
+		"tags": {
+			"displayName": "Container Registry",
+			"container.registry": "[parameters('acrName')]"
+		},
+		"properties": {
+			"adminUserEnabled": "[parameters('acrAdminUserEnabled')]"
+		}
+	}],
+	"outputs": {
+		"subscriptionId": {
+			"type": "string",
+			"value": "[subscription().subscriptionId]"
+		},
+		"resourceGroupName": {
+			"type": "string",
+			"value": "[resourceGroup().name]"
+		},
+		"resourceGroupLocation": {
+			"type": "string",
+			"value": "chinanorth2"
+		},
+		"registryServer": {
+			"value": "[reference(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2017-10-01').loginServer]",
+			"type": "string"
+		},
+		"registryUsername": {
+			"value": "[parameters('acrName')]",
+			"type": "string"
+		},
+		"registryPassword": {
+			"value": "[listCredentials(resourceId('Microsoft.ContainerRegistry/registries',parameters('acrName')),'2017-10-01').passwords[0].value]",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "Azure镜像仓库",
+	"overview": "Azure 容器注册表允许存储各种类型的容器部署映像，包括 DC/OS、Docker Swarm、Kubernetes，以及应用服务、Batch、Service Fabric 等 Azure 服务。DevOps 团队可将应用的配置和托管环境的配置独立分开管理。",
+	"tFSBuildID": 0,
+	"githubPath": "101-container-registry",
+	"isPublic": false,
+	"azureEnvironmentName": "Global",
+	"serviceType": "AzureContainerRegistry",
+	"consumptionPerDay": 0.0,
+	"description": "",
+	"services": null,
+	"imageRefInfo": []
+}
