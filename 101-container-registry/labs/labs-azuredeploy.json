@@ -17,18 +17,6 @@
 				"description": "Enable admin user that have push / pull permission to the registry."
 			}
 		},
-		"acrStorageType": {
-			"type": "string",
-			"defaultValue": "Standard_LRS",
-			"allowedValues": [
-				"Standard_LRS",
-				"Standard_ZRS",
-				"Standard_GRS"
-			],
-			"metadata": {
-				"description": "Type of the storage account that will store container registry datas."
-			}
-		},
 		"registrySku": {
 			"type": "string",
 			"defaultValue": "Standard",
@@ -37,50 +25,20 @@
 			}
 		}
 	},
-	"variables": {
-		"acrStorageName": "[concat('acr', uniqueString(resourceGroup().id))]",
-		"acrStorageId": "[resourceId('Microsoft.Storage/storageAccounts', variables('acrStorageName'))]"
-	},
 	"resources": [{
-			"name": "[variables('acrStorageName')]",
-			"type": "Microsoft.Storage/storageAccounts",
-			"apiVersion": "2017-10-01",
-			"location": "chinanorth",
-			"sku": {
-				"name": "[parameters('registrySku')]"
-			},
-			"comments": "This storage account is used by Container Registry for storing its datas.",
-			"dependsOn": [],
-			"tags": {
-				"displayName": "ACR Image's storage",
-				"container.registry": "[parameters('acrName')]"
-			},
-			"properties": {
-				"accountType": "[parameters('acrStorageType')]"
-			}
+		"name": "[parameters('acrName')]",
+		"type": "Microsoft.ContainerRegistry/registries",
+		"apiVersion": "2017-10-01",
+		"location": "chinanorth",
+		"comments": "Container registry for storing docker images",
+		"tags": {
+			"displayName": "Container Registry",
+			"container.registry": "[parameters('acrName')]"
 		},
-		{
-			"name": "[parameters('acrName')]",
-			"type": "Microsoft.ContainerRegistry/registries",
-			"apiVersion": "2017-10-01",
-			"location": "chinanorth",
-			"comments": "Container registry for storing docker images",
-			"dependsOn": [
-				"[variables('acrStorageId')]"
-			],
-			"tags": {
-				"displayName": "Container Registry",
-				"container.registry": "[parameters('acrName')]"
-			},
-			"properties": {
-				"adminUserEnabled": "[parameters('acrAdminUserEnabled')]",
-				"storageAccount": {
-					"accessKey": "[listKeys(variables('acrStorageId'),'2015-06-15').key1]",
-					"name": "[variables('acrStorageName')]"
-				}
-			}
+		"properties": {
+			"adminUserEnabled": "[parameters('acrAdminUserEnabled')]"
 		}
-	],
+	}],
 	"outputs": {
 		"subscriptionId": {
 			"type": "string",
