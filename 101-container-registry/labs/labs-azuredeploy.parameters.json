@@ -7,9 +7,6 @@
     },
     "acrAdminUserEnabled": {
       "value": true
-    },
-    "acrStorageType": {
-      "value": "Standard_LRS"
     }
   }
 }
