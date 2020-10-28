@@ -21,7 +21,7 @@
     "masterProfile": {
       "count": 1,
       "dnsPrefix": "%{dnsPrefix}%",
-      "vmSize": "Standard_DS2_v2"
+      "vmSize": "Standard_B2ms"
     },
     "agentPoolProfiles": [
       {
